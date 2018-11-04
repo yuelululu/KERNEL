@@ -11,4 +11,4 @@ appearance, race, religion, or sexual identity and orientation.
 
 ## Our Standards
 
-Examples of be
+Examples of behavior that contributes to creating a po
