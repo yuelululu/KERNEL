@@ -14,4 +14,5 @@ appearance, race, religion, or sexual identity and orientation.
 Examples of behavior that contributes to creating a positive environment
 include:
 
-* Using we
+* Using welcoming and inclusive language
+* Bein
