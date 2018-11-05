@@ -11,4 +11,7 @@ appearance, race, religion, or sexual identity and orientation.
 
 ## Our Standards
 
-Examples of behavior that contributes to creating a po
+Examples of behavior that contributes to creating a positive environment
+include:
+
+* Using we
