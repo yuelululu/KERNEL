@@ -15,4 +15,4 @@ Examples of behavior that contributes to creating a positive environment
 include:
 
 * Using welcoming and inclusive language
-* Bein
+* Being respectful of differing viewpoints and exp
