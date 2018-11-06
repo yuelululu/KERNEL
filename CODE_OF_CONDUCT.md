@@ -16,4 +16,5 @@ include:
 
 * Using welcoming and inclusive language
 * Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive 
+* Gracefully accepting constructive criticism
+* Focusing on what is best for
