@@ -45,4 +45,4 @@ threatening, offensive, or harmful.
 
 ## Scope
 
-This Code of Conduct 
+This Code of Conduct applies both within project spaces and in public sp
