@@ -47,4 +47,4 @@ threatening, offensive, or harmful.
 
 This Code of Conduct applies both within project spaces and in public spaces
 when an individual is representing the project or its community. Examples of
-representing a project or co
+representing a project or community include using an official project e-mail
