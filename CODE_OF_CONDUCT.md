@@ -54,4 +54,4 @@ further defined and clarified by project maintainers.
 
 ## Enforcement
 
-I
+Instances of abusive, harassing, or otherwis
