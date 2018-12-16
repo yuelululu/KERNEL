@@ -57,4 +57,4 @@ further defined and clarified by project maintainers.
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported by contacting the project team at unhappychoice@gmail.com. All
 complaints will be reviewed and investigated and will result in a response that
-is deemed necessar
+is deemed necessary and appropriate to the circumst
