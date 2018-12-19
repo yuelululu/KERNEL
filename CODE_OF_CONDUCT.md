@@ -59,4 +59,4 @@ reported by contacting the project team at unhappychoice@gmail.com. All
 complaints will be reviewed and investigated and will result in a response that
 is deemed necessary and appropriate to the circumstances. The project team is
 obligated to maintain confidentiality with regard to the reporter of an incident.
-Further details of spec
+Further details of specific enforcement policies may be posted sep
