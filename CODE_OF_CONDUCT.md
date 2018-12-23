@@ -63,4 +63,8 @@ Further details of specific enforcement policies may be posted separately.
 
 Project maintainers who do not follow or enforce the Code of Conduct in good
 faith may face temporary or permanent repercussions as determined by other
-members of 
+members of the project's leadership.
+
+## Attribution
+
+This 
