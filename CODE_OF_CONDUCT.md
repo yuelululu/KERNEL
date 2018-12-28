@@ -67,4 +67,4 @@ members of the project's leadership.
 
 ## Attribution
 
-This 
+This Code of Conduct is adapted from the 
