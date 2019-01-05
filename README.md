@@ -1,2 +1,2 @@
 # Norimaki
-[![play store](h
+[![play store](https://raw.githubusercontent.com/unhappyc
