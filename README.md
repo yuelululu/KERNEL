@@ -7,4 +7,6 @@
 [![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/unhappychoice/Norimaki.svg)](https://libraries.io/github/unhappychoice/Norimaki)
 ![GitHub](https://img.shields.io/github/license/unhappychoice/Norimaki.svg)
 
-![Norimaki](https://raw.githubusercontent.com/unhappychoice/Norimaki/i
+![Norimaki](https://raw.githubusercontent.com/unhappychoice/Norimaki/image/logo.png)
+
+Norimaki is a [Circle
