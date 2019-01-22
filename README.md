@@ -9,4 +9,8 @@
 
 ![Norimaki](https://raw.githubusercontent.com/unhappychoice/Norimaki/image/logo.png)
 
-Norimaki is a [CircleCI](https://circleci.com) client for Andr
+Norimaki is a [CircleCI](https://circleci.com) client for Android.
+
+## Author
+
+[Yuji Ueki](https://github.com/
