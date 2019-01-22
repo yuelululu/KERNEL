@@ -9,4 +9,4 @@
 
 ![Norimaki](https://raw.githubusercontent.com/unhappychoice/Norimaki/image/logo.png)
 
-Norimaki is a [Circle
+Norimaki is a [CircleCI](https://circleci.com) client for Andr
