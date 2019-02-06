@@ -124,3 +124,58 @@ android {
         exclude 'META-INF/rxjava.properties'
         exclude 'META-INF/rxkotlin.properties'
     }
+    testOptions {
+        unitTests {
+            all {
+                jacoco {
+                    includeNoLocationClasses = true
+                }
+            }
+        }
+    }
+}
+
+play {
+    enabled = System.getenv("RELEASE_KEYSTORE_BASE64") != null
+    serviceAccountCredentials.set(decodeFileFromBase64Env("PLAY_ACCOUNT_JSON_BASE64", "norimaki", ".json"))
+}
+
+jacoco {
+    toolVersion = "0.8.7"
+}
+
+tasks.withType(Test) {
+    jacoco.includeNoLocationClasses = true
+    jacoco.excludes = ['jdk.internal.*']
+}
+
+task jacoco(type: JacocoReport, dependsOn: ["testDebugUnitTest"]) {
+    description = "Generate Jacoco coverage reports after running tests."
+    reports {
+        xml.enabled true
+        html.enabled true
+        classDirectories.setFrom(
+                files(
+                        fileTree(
+                                dir: './build/intermediates/javac/debug/compileDebugJavaWithJavac/classes',
+                                excludes: ['**/R.class', '**/R$*.class', '**/BuildConfig.class', '**/Manifest*.*', '**/*$inlined$*.*']
+                        ) + fileTree(
+                                dir: './build/tmp/kotlin-classes/debug',
+                                excludes: ['**/R.class', '**/R$*.class', '**/BuildConfig.class', '**/Manifest*.*', '**/*$inlined$*.*']
+                        )
+                )
+        )
+        sourceDirectories.from files('src/main/kotlin')
+        executionData.from file('build/jacoco/testDebugUnitTest.exec')
+    }
+}
+
+static decodeFileFromBase64Env(String name, String fileName, String ext) {
+    String base64String = System.getenv(name)
+    if (base64String == null) return null
+    File tempFile = File.createTempFile(fileName, ext, File.createTempDir())
+    FileOutputStream fos = null
+    try {
+        fos = new FileOutputStream(tempFile)
+        fos.write(base64String.decodeBase64())
+        fos.flush()
