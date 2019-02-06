@@ -179,3 +179,10 @@ static decodeFileFromBase64Env(String name, String fileName, String ext) {
         fos = new FileOutputStream(tempFile)
         fos.write(base64String.decodeBase64())
         fos.flush()
+    } finally {
+        if (fos != null) {
+            fos.close()
+        }
+    }
+    return tempFile
+}
