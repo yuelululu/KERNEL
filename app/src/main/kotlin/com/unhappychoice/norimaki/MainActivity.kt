@@ -1,3 +1,5 @@
 package com.unhappychoice.norimaki
 
-import andro
+import android.content.Context
+import android.os.Bundle
+import 
