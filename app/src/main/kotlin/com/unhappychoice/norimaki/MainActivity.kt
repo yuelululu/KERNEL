@@ -7,4 +7,5 @@ import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import com.unhappychoice.norimaki.databinding.
+import com.unhappychoice.norimaki.databinding.ActivityMainBinding
+import com
