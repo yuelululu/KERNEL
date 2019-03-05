@@ -10,4 +10,5 @@ import androidx.appcompat.app.AppCompatActivity
 import com.unhappychoice.norimaki.databinding.ActivityMainBinding
 import com.unhappychoice.norimaki.databinding.NavigationViewBinding
 import com.unhappychoice.norimaki.di.activityModule
-import com.unhappych
+import com.unhappychoice.norimaki.di.applicationModule
+import co
