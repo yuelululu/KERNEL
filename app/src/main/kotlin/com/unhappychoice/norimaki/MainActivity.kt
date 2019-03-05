@@ -9,4 +9,5 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import com.unhappychoice.norimaki.databinding.ActivityMainBinding
 import com.unhappychoice.norimaki.databinding.NavigationViewBinding
-import com.unhappychoice.no
+import com.unhappychoice.norimaki.di.activityModule
+import com.unhappych
