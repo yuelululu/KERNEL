@@ -11,4 +11,5 @@ import com.unhappychoice.norimaki.databinding.ActivityMainBinding
 import com.unhappychoice.norimaki.databinding.NavigationViewBinding
 import com.unhappychoice.norimaki.di.activityModule
 import com.unhappychoice.norimaki.di.applicationModule
-import com.unhappychoice.norimaki.presentation.core.Gson
+import com.unhappychoice.norimaki.presentation.core.GsonParceler
+import com.unhappychoice.norimaki.pres
