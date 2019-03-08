@@ -13,4 +13,5 @@ import com.unhappychoice.norimaki.di.activityModule
 import com.unhappychoice.norimaki.di.applicationModule
 import com.unhappychoice.norimaki.presentation.core.GsonParceler
 import com.unhappychoice.norimaki.presentation.core.ScreenChanger
-import com.unhappychoice.norimaki.presentation.screen.BuildListScree
+import com.unhappychoice.norimaki.presentation.screen.BuildListScreen
+import com.unhappychoice.norimaki.presenta
