@@ -15,4 +15,6 @@ import com.unhappychoice.norimaki.presentation.core.GsonParceler
 import com.unhappychoice.norimaki.presentation.core.ScreenChanger
 import com.unhappychoice.norimaki.presentation.screen.BuildListScreen
 import com.unhappychoice.norimaki.presentation.view.NavigationView
-import com.unhappychoice.norimaki.presentation.view.core.HasMen
+import com.unhappychoice.norimaki.presentation.view.core.HasMenu
+import flow.Flow
+import flow.KeyDispatc
