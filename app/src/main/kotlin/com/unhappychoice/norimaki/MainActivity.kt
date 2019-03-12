@@ -20,4 +20,6 @@ import flow.Flow
 import flow.KeyDispatcher
 import mortar.MortarScope
 import mortar.bundler.BundleServiceRunner
-import o
+import org.kodein.di.DI
+
+class MainActivity : AppCompatAc
