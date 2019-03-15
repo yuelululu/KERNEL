@@ -26,4 +26,6 @@ class MainActivity : AppCompatActivity() {
     val module by lazy {
         DI {
             import(applicationModule(application as NorimakiApplication))
-            import(activ
+            import(activityModule(this@MainActivity))
+        }
+    }
