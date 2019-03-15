@@ -25,3 +25,4 @@ import org.kodein.di.DI
 class MainActivity : AppCompatActivity() {
     val module by lazy {
         DI {
+            import(applicationModule(application as Norimak
