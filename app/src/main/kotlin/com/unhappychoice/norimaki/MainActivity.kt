@@ -22,4 +22,6 @@ import mortar.MortarScope
 import mortar.bundler.BundleServiceRunner
 import org.kodein.di.DI
 
-class MainActivity : AppCompatAc
+class MainActivity : AppCompatActivity() {
+    val module by lazy {
+        DI {
