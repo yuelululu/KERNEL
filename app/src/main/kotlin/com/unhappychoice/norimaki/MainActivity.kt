@@ -29,3 +29,6 @@ class MainActivity : AppCompatActivity() {
             import(activityModule(this@MainActivity))
         }
     }
+
+    val drawerToggle by lazy {
+        A
