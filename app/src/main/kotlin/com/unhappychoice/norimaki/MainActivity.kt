@@ -31,4 +31,4 @@ class MainActivity : AppCompatActivity() {
     }
 
     val drawerToggle by lazy {
-        A
+        ActionBarDrawerToggle(this, binding.drawerLayout, bindi
