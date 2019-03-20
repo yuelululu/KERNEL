@@ -32,4 +32,7 @@ class MainActivity : AppCompatActivity() {
 
     val drawerToggle by lazy {
         ActionBarDrawerToggle(this, binding.drawerLayout, binding.toolbar, R.string.drawer_open, R.string.drawer_close)
-            .apply { setToolbarNavigationClickListen
+            .apply { setToolbarNavigationClickListener { onBackPressed() } }
+    }
+
+  
