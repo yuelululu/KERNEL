@@ -35,4 +35,5 @@ class MainActivity : AppCompatActivity() {
             .apply { setToolbarNavigationClickListener { onBackPressed() } }
     }
 
-  
+    val binding by lazy {
+        ActivityMainBinding.inf
