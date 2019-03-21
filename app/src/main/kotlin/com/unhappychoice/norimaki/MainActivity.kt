@@ -36,4 +36,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     val binding by lazy {
-        ActivityMainBinding.inf
+        ActivityMainBinding.inflate(layoutInflater)
+    }
+
+    priva
