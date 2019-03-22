@@ -39,4 +39,5 @@ class MainActivity : AppCompatActivity() {
         ActivityMainBinding.inflate(layoutInflater)
     }
 
-    priva
+    private val scope: MortarScope by lazy {
+      
