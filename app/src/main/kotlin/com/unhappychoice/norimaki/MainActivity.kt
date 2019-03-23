@@ -41,3 +41,4 @@ class MainActivity : AppCompatActivity() {
 
     private val scope: MortarScope by lazy {
         MortarScope.buildChild(applicationContext)
+            .withService(BundleSer
