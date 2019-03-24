@@ -44,3 +44,5 @@ class MainActivity : AppCompatActivity() {
             .withService(BundleServiceRunner.SERVICE_NAME, BundleServiceRunner())
             .build("activity_scope")
     }
+
+    override fun getSystemService(name: String):
