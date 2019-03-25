@@ -47,4 +47,5 @@ class MainActivity : AppCompatActivity() {
 
     override fun getSystemService(name: String): Any? {
         return when (scope.hasService(name)) {
-            true -> scope.ge
+            true -> scope.getService(name)
+            false -> sup
