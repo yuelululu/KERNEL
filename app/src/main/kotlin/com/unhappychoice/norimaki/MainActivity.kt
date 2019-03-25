@@ -45,4 +45,5 @@ class MainActivity : AppCompatActivity() {
             .build("activity_scope")
     }
 
-    override fun getSystemService(name: String):
+    override fun getSystemService(name: String): Any? {
+        return when (scope.hasServ
