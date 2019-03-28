@@ -52,4 +52,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    override fun attachBaseContext(baseContext: Co
+    override fun attachBaseContext(baseContext: Context) {
+        super.attachBaseContext(getFlowContext(baseContext))
+    }
+
+    ove
