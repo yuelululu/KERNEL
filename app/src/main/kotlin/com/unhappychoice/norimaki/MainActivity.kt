@@ -56,4 +56,5 @@ class MainActivity : AppCompatActivity() {
         super.attachBaseContext(getFlowContext(baseContext))
     }
 
-    override fun onCreate(savedInstanceState: Bun
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
