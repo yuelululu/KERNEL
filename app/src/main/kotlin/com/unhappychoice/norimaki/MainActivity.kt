@@ -62,4 +62,6 @@ class MainActivity : AppCompatActivity() {
         setupView()
     }
 
-    override fun onDest
+    override fun onDestroy() {
+        scope.destroy()
+        super.onD
