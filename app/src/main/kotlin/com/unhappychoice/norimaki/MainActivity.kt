@@ -64,4 +64,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         scope.destroy()
-        super.onD
+        super.onDestroy()
+    }
+
+    override fun on
