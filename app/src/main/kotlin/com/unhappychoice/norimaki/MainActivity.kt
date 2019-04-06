@@ -72,4 +72,5 @@ class MainActivity : AppCompatActivity() {
         super.onSaveInstanceState(outState)
     }
 
-   
+    override fun onBackPressed() {
+        if (!Flow.get(thi
