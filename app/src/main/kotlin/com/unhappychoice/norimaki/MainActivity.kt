@@ -78,4 +78,5 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?)
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        (getCurrentView() as? HasMenu)
