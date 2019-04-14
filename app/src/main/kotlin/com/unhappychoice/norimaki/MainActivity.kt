@@ -85,4 +85,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            android.R.id.home -> Flow.get(this).goBac
+            android.R.id.home -> Flow.get(this).goBack()
+        }
+        (getCurrentView()
