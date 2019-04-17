@@ -87,4 +87,4 @@ class MainActivity : AppCompatActivity() {
         when (item.itemId) {
             android.R.id.home -> Flow.get(this).goBack()
         }
-        (getCurrentView()
+        (getCurrentView() as? HasMenu)?.onOptionsItemSelected(it
