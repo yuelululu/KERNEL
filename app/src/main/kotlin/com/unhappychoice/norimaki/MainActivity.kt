@@ -91,4 +91,5 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
-    private fun setupVi
+    private fun setupView() {
+        setContentView(binding.root)
