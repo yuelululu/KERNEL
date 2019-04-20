@@ -93,3 +93,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupView() {
         setContentView(binding.root)
+        setSupportActionBar(binding.toolbar)
+
+        bi
