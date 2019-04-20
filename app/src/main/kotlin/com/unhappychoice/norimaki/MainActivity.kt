@@ -96,4 +96,4 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
 
         binding.navigationView.di = module
-     
+        binding.drawerLayout.addDrawerListene
