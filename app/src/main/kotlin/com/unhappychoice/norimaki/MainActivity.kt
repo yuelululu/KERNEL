@@ -101,4 +101,4 @@ class MainActivity : AppCompatActivity() {
 
     private fun getFlowContext(baseContext: Context): Context =
         Flow.configure(baseContext, this)
-            .di
+            .dispatcher(KeyDispatcher.configure(this, Scre
