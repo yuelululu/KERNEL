@@ -103,4 +103,7 @@ class MainActivity : AppCompatActivity() {
         Flow.configure(baseContext, this)
             .dispatcher(KeyDispatcher.configure(this, ScreenChanger(this)).build())
             .defaultKey(BuildListScreen(""))
-            .keyParc
+            .keyParceler(GsonParceler())
+            .install()
+
+    private fun
