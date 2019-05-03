@@ -106,4 +106,5 @@ class MainActivity : AppCompatActivity() {
             .keyParceler(GsonParceler())
             .install()
 
-    private fun getCurrentView(): View? = binding.containerView.getC
+    private fun getCurrentView(): View? = binding.containerView.getChildAt(0)
+}
