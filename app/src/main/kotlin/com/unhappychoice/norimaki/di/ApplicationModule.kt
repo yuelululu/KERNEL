@@ -6,4 +6,5 @@ import com.google.gson.FieldNamingPolicy
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.unhappychoice.norimaki.NorimakiApplication
-import com.unhappyc
+import com.unhappychoice.norimaki.domain.service.EventBusService
+imp
