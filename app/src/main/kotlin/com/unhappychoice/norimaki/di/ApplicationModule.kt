@@ -7,4 +7,5 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.unhappychoice.norimaki.NorimakiApplication
 import com.unhappychoice.norimaki.domain.service.EventBusService
-import com.unhappychoice.norimaki.infrastructure.
+import com.unhappychoice.norimaki.infrastructure.preference.APITokenPreference
+import com.unhappycho
