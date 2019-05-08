@@ -8,4 +8,7 @@ import com.google.gson.GsonBuilder
 import com.unhappychoice.norimaki.NorimakiApplication
 import com.unhappychoice.norimaki.domain.service.EventBusService
 import com.unhappychoice.norimaki.infrastructure.preference.APITokenPreference
-import com.unhappychoice.norimaki.infrastructure.pusher.Pushe
+import com.unhappychoice.norimaki.infrastructure.pusher.PusherService
+import org.kodein.di.*
+
+fun applicationModule(ap
