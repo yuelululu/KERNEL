@@ -13,4 +13,4 @@ import org.kodein.di.*
 
 fun applicationModule(application: NorimakiApplication) = DI.Module("application") {
     bind<NorimakiApplication>() with provider { application }
-    bind<E
+    bind<EventBusService>() with singleton { EventBu
