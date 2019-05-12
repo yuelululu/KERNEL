@@ -12,4 +12,5 @@ import com.unhappychoice.norimaki.infrastructure.pusher.PusherService
 import org.kodein.di.*
 
 fun applicationModule(application: NorimakiApplication) = DI.Module("application") {
-    bind<NorimakiApplic
+    bind<NorimakiApplication>() with provider { application }
+    bind<E
