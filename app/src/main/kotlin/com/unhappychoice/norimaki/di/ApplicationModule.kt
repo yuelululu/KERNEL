@@ -11,4 +11,5 @@ import com.unhappychoice.norimaki.infrastructure.preference.APITokenPreference
 import com.unhappychoice.norimaki.infrastructure.pusher.PusherService
 import org.kodein.di.*
 
-fun applicationModule(application: NorimakiApplication) = D
+fun applicationModule(application: NorimakiApplication) = DI.Module("application") {
+    bind<NorimakiApplic
