@@ -16,4 +16,5 @@ fun applicationModule(application: NorimakiApplication) = DI.Module("application
     bind<EventBusService>() with singleton { EventBusService() }
     bind<PusherService>() with singleton { PusherService(instance(), instance()) }
     bind<Gson>() with singleton {
-        GsonBu
+        GsonBuilder()
+            .setFieldNamingPolicy(FieldNa
