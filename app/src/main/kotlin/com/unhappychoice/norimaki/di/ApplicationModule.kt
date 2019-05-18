@@ -18,4 +18,7 @@ fun applicationModule(application: NorimakiApplication) = DI.Module("application
     bind<Gson>() with singleton {
         GsonBuilder()
             .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
-            .setDateFormat("yyyy-MM-dd'T'HH:mm
+            .setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")
+            .create()
+    }
+    bind<CircleC
