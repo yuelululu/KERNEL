@@ -17,4 +17,5 @@ fun applicationModule(application: NorimakiApplication) = DI.Module("application
     bind<PusherService>() with singleton { PusherService(instance(), instance()) }
     bind<Gson>() with singleton {
         GsonBuilder()
-            .setFieldNamingPolicy(FieldNa
+            .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
+     
