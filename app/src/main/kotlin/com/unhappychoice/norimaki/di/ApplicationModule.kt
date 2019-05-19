@@ -21,4 +21,5 @@ fun applicationModule(application: NorimakiApplication) = DI.Module("application
             .setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")
             .create()
     }
-    bind<CircleC
+    bind<CircleCIAPIClientV1>() with provider {
+        CircleCIAPIC
