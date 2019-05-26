@@ -22,4 +22,6 @@ fun applicationModule(application: NorimakiApplication) = DI.Module("application
             .create()
     }
     bind<CircleCIAPIClientV1>() with provider {
-        CircleCIAPIClient(APITokenPreference(application).token).clien
+        CircleCIAPIClient(APITokenPreference(application).token).client()
+    }
+}
