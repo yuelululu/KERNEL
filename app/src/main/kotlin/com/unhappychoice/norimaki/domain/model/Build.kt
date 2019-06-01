@@ -4,4 +4,4 @@ import android.graphics.Color
 import com.github.unhappychoice.circleci.response.Build
 
 fun Build.repositoryString(): String = "$username / $reponame"
-fun Build.revisionString(): St
+fun Build.revisionString(): String = "$branch #$buildNum (${vcsRevision?.t
