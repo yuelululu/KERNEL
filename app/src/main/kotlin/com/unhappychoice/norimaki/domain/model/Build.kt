@@ -7,4 +7,5 @@ fun Build.repositoryString(): String = "$username / $reponame"
 fun Build.revisionString(): String = "$branch #$buildNum (${vcsRevision?.take(6)})"
 
 fun Build.statusColor(): Int = when (status) {
-    "success", "fixed", "
+    "success", "fixed", "no_tests" -> Color.rgb(66, 200, 138)
+    "can
