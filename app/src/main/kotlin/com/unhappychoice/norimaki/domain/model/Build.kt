@@ -13,4 +13,5 @@ fun Build.statusColor(): Int = when (status) {
     else -> Color.rgb(92, 211, 228)
 }
 
-fun Build.avatarUrl(): String = 
+fun Build.avatarUrl(): String = "https://github.com/${user?.get("login")}.png"
+
