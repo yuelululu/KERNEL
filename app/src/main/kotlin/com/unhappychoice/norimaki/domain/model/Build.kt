@@ -13,4 +13,4 @@ fun Build.statusColor(): Int = when (status) {
     else -> Color.rgb(92, 211, 228)
 }
 
-f
+fun Build.avatarUrl(): String = 
