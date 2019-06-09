@@ -17,4 +17,4 @@ fun Build.avatarUrl(): String = "https://github.com/${user?.get("login")}.png"
 
 fun Build.uniqueId(): String = "${repositoryString()}/$buildNum"
 
-fun Build.channelName(): St
+fun Build.channelName(): String = "private-$username@$reponame@$buildNum@vcs-
