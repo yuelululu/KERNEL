@@ -15,3 +15,4 @@ fun Build.statusColor(): Int = when (status) {
 
 fun Build.avatarUrl(): String = "https://github.com/${user?.get("login")}.png"
 
+fun Build.uniqueId(): String = "${repository
