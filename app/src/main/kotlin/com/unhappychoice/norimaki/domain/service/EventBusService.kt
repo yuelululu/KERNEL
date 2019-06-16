@@ -6,4 +6,5 @@ import io.reactivex.subjects.PublishSubject
 
 class EventBusService {
     val authenticated: PublishSubject<Pair<String, String>> = PublishSubject.create()
-    val unauthenticated: PublishSubject<Unit> = PublishSubject.creat
+    val unauthenticated: PublishSubject<Unit> = PublishSubject.create()
+    val selectProject: PublishSubje
