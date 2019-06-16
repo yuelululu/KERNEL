@@ -5,4 +5,4 @@ import com.gojuno.koptional.Optional
 import io.reactivex.subjects.PublishSubject
 
 class EventBusService {
-    val authenticated: Publ
+    val authenticated: PublishSubject<Pair<String, String>> = PublishSubj
