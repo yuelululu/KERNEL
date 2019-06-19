@@ -4,4 +4,4 @@ import java.util.*
 
 fun Date.getTimeAgo(): String {
     val before = time / 1000
-    val now =
+    val now = Calendar.getInstance().timeInM
