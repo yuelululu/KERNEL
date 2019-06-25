@@ -5,4 +5,4 @@ import java.util.*
 fun Date.getTimeAgo(): String {
     val before = time / 1000
     val now = Calendar.getInstance().timeInMillis / 1000
-    val offset = Calen
+    val offset = Calendar.getInstance().timeZone.rawOffset / 1
