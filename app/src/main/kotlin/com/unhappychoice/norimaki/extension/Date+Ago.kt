@@ -9,4 +9,5 @@ fun Date.getTimeAgo(): String {
     val difference = now - before - offset
 
     return when {
-        difference < 0 -
+        difference < 0 -> "now"
+        difference < MINUTES -
