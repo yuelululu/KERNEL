@@ -11,4 +11,5 @@ fun Date.getTimeAgo(): String {
     return when {
         difference < 0 -> "now"
         difference < MINUTES -> difference.toString() + "s ago"
-        difference < HOURS -> (difference / MINUT
+        difference < HOURS -> (difference / MINUTES).toString() + "m ago"
+        difference 
