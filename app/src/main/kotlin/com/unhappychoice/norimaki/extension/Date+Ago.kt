@@ -16,4 +16,4 @@ fun Date.getTimeAgo(): String {
         difference < WEEKS -> (difference / DAYS).toString() + "D ago"
         difference < MONTHS -> (difference / WEEKS).toString() + "W ago"
         difference < YEARS -> (difference / MONTHS).toString() + "M ago"
-        el
+        else -> (difference / YEARS).toString() + "Y ag
