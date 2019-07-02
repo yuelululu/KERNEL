@@ -21,4 +21,5 @@ fun Date.getTimeAgo(): String {
 }
 
 private val SECONDS = 1
-private
+private val MINUTES = 60 * SECONDS
+private val HOURS =
