@@ -23,4 +23,6 @@ fun Date.getTimeAgo(): String {
 private val SECONDS = 1
 private val MINUTES = 60 * SECONDS
 private val HOURS = 60 * MINUTES
-private val DAYS = 24
+private val DAYS = 24 * HOURS
+private val WEEKS = 7 * DAYS
+privat
