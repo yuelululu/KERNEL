@@ -25,4 +25,5 @@ private val MINUTES = 60 * SECONDS
 private val HOURS = 60 * MINUTES
 private val DAYS = 24 * HOURS
 private val WEEKS = 7 * DAYS
-privat
+private val MONTHS = 4 * WEEKS
+private val YEARS = 12 *
