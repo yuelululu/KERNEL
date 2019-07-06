@@ -1,4 +1,6 @@
 package com.unhappychoice.norimaki.extension
 
 import org.json.JSONArray
-import
+import org.json.JSONObject
+
+fun JSONArray.asSequ
