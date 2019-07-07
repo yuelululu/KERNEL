@@ -6,4 +6,5 @@ import org.json.JSONObject
 fun JSONArray.asSequence(): Sequence<JSONObject> = iterator().asSequence()
 
 private fun JSONArray.iterator(): Iterator<JSONObject> {
-    return object : Iterator
+    return object : Iterator<JSONObject> {
+        private val size = 
