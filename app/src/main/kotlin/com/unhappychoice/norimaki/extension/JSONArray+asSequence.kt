@@ -5,4 +5,5 @@ import org.json.JSONObject
 
 fun JSONArray.asSequence(): Sequence<JSONObject> = iterator().asSequence()
 
-private fun JSONArray.iterator(): Ite
+private fun JSONArray.iterator(): Iterator<JSONObject> {
+    return object : Iterator
