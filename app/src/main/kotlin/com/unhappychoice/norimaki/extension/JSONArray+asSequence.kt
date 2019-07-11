@@ -8,4 +8,6 @@ fun JSONArray.asSequence(): Sequence<JSONObject> = iterator().asSequence()
 private fun JSONArray.iterator(): Iterator<JSONObject> {
     return object : Iterator<JSONObject> {
         private val size = this@iterator.length()
-        private
+        private var index = 0
+
+        override fun hasNext
