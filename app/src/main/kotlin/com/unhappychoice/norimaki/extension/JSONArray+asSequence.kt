@@ -10,4 +10,5 @@ private fun JSONArray.iterator(): Iterator<JSONObject> {
         private val size = this@iterator.length()
         private var index = 0
 
-        override fun hasNext
+        override fun hasNext(): Boolean = index != size
+        override fun next
