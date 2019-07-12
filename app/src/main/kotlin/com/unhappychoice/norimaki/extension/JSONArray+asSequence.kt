@@ -12,4 +12,6 @@ private fun JSONArray.iterator(): Iterator<JSONObject> {
 
         override fun hasNext(): Boolean = index != size
         override fun next(): JSONObject {
-            val obj = get
+            val obj = getJSONObject(index)
+            index += 1
+            return 
