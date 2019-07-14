@@ -8,4 +8,6 @@ import io.reactivex.rxkotlin.subscribeBy
 import io.reactivex.schedulers.Schedulers
 import io.reactivex.subjects.Subject
 
-fun <T: Any> Observable<T>.subscribeNext(fn: (T) -> Unit
+fun <T: Any> Observable<T>.subscribeNext(fn: (T) -> Unit): Disposable =
+    subscribeBy(
+        onNe
