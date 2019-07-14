@@ -8,4 +8,4 @@ import io.reactivex.rxkotlin.subscribeBy
 import io.reactivex.schedulers.Schedulers
 import io.reactivex.subjects.Subject
 
-fu
+fun <T: Any> Observable<T>.subscribeNext(fn: (T) -> Unit
