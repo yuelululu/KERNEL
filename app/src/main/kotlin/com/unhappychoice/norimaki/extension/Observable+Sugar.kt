@@ -11,4 +11,8 @@ import io.reactivex.subjects.Subject
 fun <T: Any> Observable<T>.subscribeNext(fn: (T) -> Unit): Disposable =
     subscribeBy(
         onNext = { fn(it) },
-        onError = { it.printStack
+        onError = { it.printStackTrace() },
+        onComplete = {}
+    )
+
+fun 
