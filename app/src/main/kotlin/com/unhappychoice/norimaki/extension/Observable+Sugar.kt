@@ -15,4 +15,4 @@ fun <T: Any> Observable<T>.subscribeNext(fn: (T) -> Unit): Disposable =
         onComplete = {}
     )
 
-fun 
+fun <T : Any> Observable<T>.subscribeError(fn: (
