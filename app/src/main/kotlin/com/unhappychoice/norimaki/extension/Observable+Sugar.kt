@@ -22,4 +22,4 @@ fun <T : Any> Observable<T>.subscribeError(fn: (e: Throwable?) -> Unit): Disposa
         onComplete = {}
     )
 
-fun <T : Any> Obs
+fun <T : Any> Observable<T>.subscribeCompleted(fn: () 
