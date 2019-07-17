@@ -18,4 +18,5 @@ fun <T: Any> Observable<T>.subscribeNext(fn: (T) -> Unit): Disposable =
 fun <T : Any> Observable<T>.subscribeError(fn: (e: Throwable?) -> Unit): Disposable =
     subscribeBy(
         onNext = {},
-       
+        onError = { fn(it) },
+        onComplet
