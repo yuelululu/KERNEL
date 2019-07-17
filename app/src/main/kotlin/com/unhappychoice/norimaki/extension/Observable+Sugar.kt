@@ -19,4 +19,7 @@ fun <T : Any> Observable<T>.subscribeError(fn: (e: Throwable?) -> Unit): Disposa
     subscribeBy(
         onNext = {},
         onError = { fn(it) },
-        onComplet
+        onComplete = {}
+    )
+
+fun <T : Any> Obs
