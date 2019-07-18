@@ -26,4 +26,7 @@ fun <T : Any> Observable<T>.subscribeCompleted(fn: () -> Unit): Disposable =
     subscribeBy(
         onNext = {},
         onError = { it.printStackTrace() },
-        onComplet
+        onComplete = { fn() }
+    )
+
+fun <T> Obs
