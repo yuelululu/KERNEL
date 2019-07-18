@@ -23,4 +23,6 @@ fun <T : Any> Observable<T>.subscribeError(fn: (e: Throwable?) -> Unit): Disposa
     )
 
 fun <T : Any> Observable<T>.subscribeCompleted(fn: () -> Unit): Disposable =
-    subscribeBy
+    subscribeBy(
+        onNext = {},
+        onError
