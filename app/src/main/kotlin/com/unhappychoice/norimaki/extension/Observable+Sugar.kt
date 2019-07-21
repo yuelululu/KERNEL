@@ -29,4 +29,5 @@ fun <T : Any> Observable<T>.subscribeCompleted(fn: () -> Unit): Disposable =
         onComplete = { fn() }
     )
 
-fun <T> Observable<T>.subscribeOnIoObserveOnUI(): 
+fun <T> Observable<T>.subscribeOnIoObserveOnUI(): Observable<T> =
+    subscribeOn(Schedulers.io()).obser
