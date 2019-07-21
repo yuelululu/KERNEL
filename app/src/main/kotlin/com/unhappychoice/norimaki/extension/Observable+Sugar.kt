@@ -29,4 +29,4 @@ fun <T : Any> Observable<T>.subscribeCompleted(fn: () -> Unit): Disposable =
         onComplete = { fn() }
     )
 
-fun <T> Obs
+fun <T> Observable<T>.subscribeOnIoObserveOnUI(): 
