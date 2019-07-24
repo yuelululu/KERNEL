@@ -33,4 +33,6 @@ fun <T> Observable<T>.subscribeOnIoObserveOnUI(): Observable<T> =
     subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
 
 fun <T> Observable<T?>.filterNotNull(): Observable<T> =
-    filter { it != null }.
+    filter { it != null }.map { it!! }
+
+fun <T> Observable<T>.
