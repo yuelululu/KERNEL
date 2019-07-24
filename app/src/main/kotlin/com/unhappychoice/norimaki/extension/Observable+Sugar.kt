@@ -32,4 +32,4 @@ fun <T : Any> Observable<T>.subscribeCompleted(fn: () -> Unit): Disposable =
 fun <T> Observable<T>.subscribeOnIoObserveOnUI(): Observable<T> =
     subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
 
-fun 
+fun <T> Observable<T?>.filterNotNull(): Obse
