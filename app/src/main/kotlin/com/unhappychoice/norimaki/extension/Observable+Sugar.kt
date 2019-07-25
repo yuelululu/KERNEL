@@ -35,4 +35,5 @@ fun <T> Observable<T>.subscribeOnIoObserveOnUI(): Observable<T> =
 fun <T> Observable<T?>.filterNotNull(): Observable<T> =
     filter { it != null }.map { it!! }
 
-fun <T> Observable<T>.withLog(name: String = "Anonymous"
+fun <T> Observable<T>.withLog(name: String = "Anonymous"): Observable<T> =
+    doOnNext { Log.d(name, "o
