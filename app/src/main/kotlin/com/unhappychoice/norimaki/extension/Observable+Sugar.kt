@@ -37,4 +37,4 @@ fun <T> Observable<T?>.filterNotNull(): Observable<T> =
 
 fun <T> Observable<T>.withLog(name: String = "Anonymous"): Observable<T> =
     doOnNext { Log.d(name, "onNext: ${it?.toString()}") }
-       
+        .doOnError { Log.d(name, "onError: $it")
