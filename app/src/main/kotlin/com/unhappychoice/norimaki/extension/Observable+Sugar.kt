@@ -40,4 +40,4 @@ fun <T> Observable<T>.withLog(name: String = "Anonymous"): Observable<T> =
         .doOnError { Log.d(name, "onError: $it") }
         .doOnComplete { Log.d(name, "onCompleted") }
 
-fun <T : Any> Observable<T>.bindTo
+fun <T : Any> Observable<T>.bindTo(subject: Subject<T>): Disposable = subs
