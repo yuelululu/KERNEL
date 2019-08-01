@@ -41,4 +41,4 @@ fun <T> Observable<T>.withLog(name: String = "Anonymous"): Observable<T> =
         .doOnComplete { Log.d(name, "onCompleted") }
 
 fun <T : Any> Observable<T>.bindTo(subject: Subject<T>): Disposable = subscribeNext { subject.onNext(it) }
-fun <T : Any> Observable<T>.bindTo(variable: Variable<T>): 
+fun <T : Any> Observable<T>.bindTo(variable: Variable<T>): Disposable = subscribeNext { variable.value
