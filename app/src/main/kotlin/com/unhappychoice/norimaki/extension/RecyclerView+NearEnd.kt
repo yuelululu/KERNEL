@@ -1,4 +1,6 @@
 package com.unhappychoice.norimaki.extension
 
 import androidx.recyclerview.widget.LinearLayoutManager
-import
+import androidx.recyclerview.widget.RecyclerView
+
+fun 
