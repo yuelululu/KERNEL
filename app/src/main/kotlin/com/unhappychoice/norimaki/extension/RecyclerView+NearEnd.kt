@@ -6,4 +6,6 @@ import androidx.recyclerview.widget.RecyclerView
 fun RecyclerView.isNearEnd(): Boolean {
     val layoutManager = layoutManager as LinearLayoutManager
     val total = layoutManager.itemCount
-    val lastVisible = layoutManager.findLastVisibleItemPos
+    val lastVisible = layoutManager.findLastVisibleItemPosition()
+    return lastVisible >= total - 4
+}
