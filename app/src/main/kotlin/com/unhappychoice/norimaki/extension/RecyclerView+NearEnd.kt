@@ -5,4 +5,5 @@ import androidx.recyclerview.widget.RecyclerView
 
 fun RecyclerView.isNearEnd(): Boolean {
     val layoutManager = layoutManager as LinearLayoutManager
-    
+    val total = layoutManager.itemCount
+    val lastV
