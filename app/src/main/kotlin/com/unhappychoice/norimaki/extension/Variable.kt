@@ -5,4 +5,5 @@ import io.reactivex.subjects.BehaviorSubject
 import kotlin.reflect.KProperty
 
 class Variable<T>(value: T) {
-    private var _value: T = 
+    private var _value: T = value
+    private val _subject: BehaviorSubject<
