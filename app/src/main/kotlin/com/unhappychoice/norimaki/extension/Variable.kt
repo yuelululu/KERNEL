@@ -6,4 +6,6 @@ import kotlin.reflect.KProperty
 
 class Variable<T>(value: T) {
     private var _value: T = value
-    private val _subject: BehaviorSubject<
+    private val _subject: BehaviorSubject<T> = BehaviorSubject.createDefault(value)
+
+    var v
