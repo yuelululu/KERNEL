@@ -9,4 +9,4 @@ class Variable<T>(value: T) {
     private val _subject: BehaviorSubject<T> = BehaviorSubject.createDefault(value)
 
     var value: T by object {
-        operator fun get
+        operator fun getValue(thisRef: Any?, property: KProperty<*>): T = _value
