@@ -11,4 +11,5 @@ class Variable<T>(value: T) {
     var value: T by object {
         operator fun getValue(thisRef: Any?, property: KProperty<*>): T = _value
 
-        operator fun setValue(thisRef:
+        operator fun setValue(thisRef: Any?, property: KProperty<*>, value: T) {
+    
