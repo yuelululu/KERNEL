@@ -13,4 +13,8 @@ class Variable<T>(value: T) {
 
         operator fun setValue(thisRef: Any?, property: KProperty<*>, value: T) {
             _value = value
-            _subje
+            _subject.onNext(value)
+        }
+    }
+
+    fun asObservable(): Obser
