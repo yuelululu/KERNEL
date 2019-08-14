@@ -19,4 +19,5 @@ class Variable<T>(value: T) {
 
     fun asObservable(): Observable<T> = _subject
 
-    fun
+    fun finalize() = _subject.onComplete()
+}
