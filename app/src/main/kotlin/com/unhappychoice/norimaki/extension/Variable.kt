@@ -17,4 +17,6 @@ class Variable<T>(value: T) {
         }
     }
 
-    fun asObservable(): Obser
+    fun asObservable(): Observable<T> = _subject
+
+    fun
