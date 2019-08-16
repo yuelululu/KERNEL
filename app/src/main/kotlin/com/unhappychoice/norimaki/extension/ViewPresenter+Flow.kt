@@ -6,4 +6,4 @@ import com.unhappychoice.norimaki.presentation.screen.core.Screen
 import flow.Flow
 import mortar.ViewPresenter
 
-fun <V : View> ViewPresenter<V>.goTo
+fun <V : View> ViewPresenter<V>.goTo(context: Context, screen: Screen) = Flow.get(context).se
