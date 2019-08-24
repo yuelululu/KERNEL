@@ -4,4 +4,4 @@ import android.content.Context
 import jp.takuji31.koreference.KoreferenceModel
 import jp.takuji31.koreference.stringPreference
 
-c
+class APITokenPreference(context: Context)
