@@ -22,3 +22,35 @@ import io.reactivex.rxkotlin.addTo
 import io.reactivex.subjects.PublishSubject
 
 class PusherService(eventBus: EventBusService, val gson: Gson) {
+    val buildListUpdated: PublishSubject<Unit> = PublishSubject.create()
+
+    private var pusher: Pusher? = null
+    private var channels: MutableMap<String, Channel> = mutableMapOf()
+    private val bag = CompositeDisposable()
+    private val subscriptionBag = CompositeDisposable()
+
+    init {
+        eventBus.authenticated
+            .withLog("authenticated")
+            .subscribeNext { connect(it.first, it.second) }
+            .addTo(bag)
+
+        eventBus.unauthenticated
+            .subscribeNext { close() }
+            .addTo(bag)
+    }
+
+    fun newActionEvents(build: Build): Observable<Action> =
+        subscribe(build.channelName(), "newAction")
+            .map { gson.fromJson<List<Action>>(it, object : TypeToken<List<Action>>() {}.type) }
+            .flatMap { Observable.fromIterable(it) }
+
+    fun updateActionEvents(build: Build): Observable<Action> =
+        subscribe(build.channelName(), "updateAction")
+            .map { gson.fromJson<List<Action>>(it, object : TypeToken<List<Action>>() {}.type) }
+            .flatMap { Observable.fromIterable(it) }
+
+    fun appendActionEvents(build: Build): Observable<OutAction> =
+        subscribe(build.channelName(), "appendAction")
+            .map { gson.fromJson<List<OutAction>>(it, object : TypeToken<List<OutAction>>() {}.type) }
+            .flatMap { Observable.fromIterable(it) }
