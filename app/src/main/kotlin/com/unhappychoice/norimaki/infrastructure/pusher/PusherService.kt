@@ -54,3 +54,35 @@ class PusherService(eventBus: EventBusService, val gson: Gson) {
         subscribe(build.channelName(), "appendAction")
             .map { gson.fromJson<List<OutAction>>(it, object : TypeToken<List<OutAction>>() {}.type) }
             .flatMap { Observable.fromIterable(it) }
+
+    fun subscribe(channelName: String, eventName: String): Observable<String> =
+        channelFor(channelName)?.privateChannelEvents(eventName) ?: Observable.empty<String>()
+
+    private fun connect(token: String, pusherId: String) {
+        close()
+        pusher = Pusher(apiKey(), options(token)).apply { connect() }
+
+        subscribe("private-$pusherId", "call")
+            .map { Unit }
+            .bindTo(buildListUpdated)
+            .addTo(subscriptionBag)
+    }
+
+    private fun close() {
+        subscriptionBag.clear()
+        pusher?.disconnect()
+        pusher = null
+        channels = mutableMapOf()
+    }
+
+    private fun channelFor(name: String): Channel? {
+        if (channels[name] != null) return channels[name]
+        return pusher?.subscribePrivate(name)?.also { channels.put(name, it) }
+    }
+
+    private fun apiKey() = "1cf6e0e755e419d2ac9a"
+
+    private fun options(token: String) = PusherOptions().setAuthorizer(authorizer(token)).setEncrypted(true)
+
+    private fun authorizer(token: String) = HttpAuthorizer("https://circleci.com/auth/pusher?circle-token=$token")
+}
