@@ -6,4 +6,4 @@ import com.pusher.client.channel.PrivateChannelEventListener
 import com.pusher.client.channel.PusherEvent
 import io.reactivex.Observable
 
-fun C
+fun Channel.privateChannelEvents(eventName: S
