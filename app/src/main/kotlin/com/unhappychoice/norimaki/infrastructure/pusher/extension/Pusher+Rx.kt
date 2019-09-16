@@ -7,4 +7,5 @@ import com.pusher.client.channel.PusherEvent
 import io.reactivex.Observable
 
 fun Channel.privateChannelEvents(eventName: String): Observable<String> {
-    var
+    var listener: PrivateChannelEventListener? = null
+  
