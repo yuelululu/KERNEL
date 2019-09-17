@@ -8,4 +8,5 @@ import io.reactivex.Observable
 
 fun Channel.privateChannelEvents(eventName: String): Observable<String> {
     var listener: PrivateChannelEventListener? = null
-    return Observable.create<String> { obs
+    return Observable.create<String> { observer ->
+        listener = object : PrivateChan
