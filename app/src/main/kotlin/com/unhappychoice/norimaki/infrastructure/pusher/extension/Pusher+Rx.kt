@@ -12,4 +12,6 @@ fun Channel.privateChannelEvents(eventName: String): Observable<String> {
         listener = object : PrivateChannelEventListener {
             override fun onAuthenticationFailure(message: String?, e: Exception?) {
                 Log.e("Pusher", "Failed to authenticate $message ${e.toString()}")
-    
+            }
+
+            override fun onSubscript
