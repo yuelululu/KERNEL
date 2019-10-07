@@ -18,4 +18,5 @@ fun Channel.privateChannelEvents(eventName: String): Observable<String> {
                 Log.d("Pusher", "Succeeded to subscribe $channelName")
             }
 
-            override fun onEvent(event: PusherEvent?) 
+            override fun onEvent(event: PusherEvent?) {
+                event?.data?.let { observe
