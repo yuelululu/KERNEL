@@ -22,4 +22,6 @@ fun Channel.privateChannelEvents(eventName: String): Observable<String> {
                 event?.data?.let { observer.onNext(it) }
             }
         }
-  
+        bind(eventName, listener)
+    }
+   
