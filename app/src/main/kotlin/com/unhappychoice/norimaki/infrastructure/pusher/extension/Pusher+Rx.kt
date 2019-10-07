@@ -25,4 +25,5 @@ fun Channel.privateChannelEvents(eventName: String): Observable<String> {
         bind(eventName, listener)
     }
         .doOnError {
-            unbind(eventNam
+            unbind(eventName, listener)
+            listener = nul
