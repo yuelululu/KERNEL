@@ -19,4 +19,7 @@ fun Channel.privateChannelEvents(eventName: String): Observable<String> {
             }
 
             override fun onEvent(event: PusherEvent?) {
-                event?.data?.let { observe
+                event?.data?.let { observer.onNext(it) }
+            }
+        }
+  
