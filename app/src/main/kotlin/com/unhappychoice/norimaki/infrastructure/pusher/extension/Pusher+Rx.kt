@@ -31,3 +31,5 @@ fun Channel.privateChannelEvents(eventName: String): Observable<String> {
         .doOnComplete {
             unbind(eventName, listener)
             listener = null
+        }
+}
