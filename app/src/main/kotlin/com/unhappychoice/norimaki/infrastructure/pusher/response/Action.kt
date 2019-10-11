@@ -1,1 +1,3 @@
-package com.unhappychoice.nor
+package com.unhappychoice.norimaki.infrastructure.pusher.response
+
+data clas
