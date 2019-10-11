@@ -1,3 +1,6 @@
 package com.unhappychoice.norimaki.infrastructure.pusher.response
 
-data clas
+data class Action(
+    val step: Int,
+    val index: Int,
+ 
