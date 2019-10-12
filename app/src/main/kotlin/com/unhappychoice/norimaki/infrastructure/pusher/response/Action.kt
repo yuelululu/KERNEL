@@ -7,3 +7,5 @@ data class Action(
     val log: ActionLog
 )
 
+data class OutAction(
+    val step: Int,
