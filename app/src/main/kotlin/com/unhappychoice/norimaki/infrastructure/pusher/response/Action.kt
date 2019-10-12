@@ -9,3 +9,5 @@ data class Action(
 
 data class OutAction(
     val step: Int,
+    val index: Int,
+    val messages: Str
