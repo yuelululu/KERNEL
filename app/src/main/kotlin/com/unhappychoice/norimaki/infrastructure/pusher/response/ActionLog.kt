@@ -19,3 +19,24 @@ data class ActionLog(
     val type: String
 ) {
     fun toBuildAction(): BuildAction =
+        BuildAction(
+            bashCommand = null,
+            canceled = null,
+            endTime = endTime,
+            exitCode = null,
+            failed = null,
+            hasOutput = hasOutput,
+            infrastructureFail = null,
+            index = index,
+            name = name,
+            outputUrl = outputUrl,
+            parallel = parallel,
+            runTimeMillis = runTimeMillis,
+            startTime = startTime,
+            status = status,
+            step = step,
+            timedout = null,
+            truncated = null,
+            type = type
+        )
+}
