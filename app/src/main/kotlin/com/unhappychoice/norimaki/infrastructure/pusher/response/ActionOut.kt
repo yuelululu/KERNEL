@@ -1,3 +1,5 @@
 package com.unhappychoice.norimaki.infrastructure.pusher.response
 
-i
+import java.util.*
+
+data class ActionO
