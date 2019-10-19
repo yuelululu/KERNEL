@@ -4,4 +4,6 @@ import java.util.*
 
 data class ActionOut(
     val type: String,
-    val time
+    val time: Date,
+    val message: String
+)
