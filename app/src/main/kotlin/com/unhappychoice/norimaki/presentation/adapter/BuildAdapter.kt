@@ -51,3 +51,21 @@ class BuildAdapter(val context: Context) : RecyclerView.Adapter<BuildAdapter.Vie
 
             Glide.with(context).load(build.avatarUrl())
                 .into(author)
+
+            view.clicks()
+                .subscribeNext { onClickItem.onNext(build) }
+                .addTo(bag)
+        }
+
+        private val author = view.findViewById<CircleImageView>(R.id.author)
+        private val indicator = view.findViewById<View>(R.id.statusIndicator)
+        private val repositoryTitle = view.findViewById<TextView>(R.id.repositoryTitle)
+        private val branchTitle = view.findViewById<TextView>(R.id.branchTitle)
+        private val commitTitle = view.findViewById<TextView>(R.id.commitTitle)
+        private val createdAt = view.findViewById<TextView>(R.id.createdAt)
+    }
+
+    fun finalize() = bag.dispose()
+
+    private val bag = CompositeDisposable()
+}
