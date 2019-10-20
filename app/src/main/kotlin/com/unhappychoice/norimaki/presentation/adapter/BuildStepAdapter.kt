@@ -32,3 +32,30 @@ class BuildStepAdapter(val context: Context) : RecyclerView.Adapter<BuildStepAda
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.build_step_list_item_view, parent, false)
+        return ViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.bind(steps.value[position])
+    }
+
+    inner class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
+        fun bind(step: BuildStep) {
+            buildTitle.text = step.name
+            time.text = step.runTime()
+            indicator.setBackgroundColor(step.statusColor())
+
+            view.clicks()
+                .subscribeNext { onClickItem.onNext(step) }
+                .addTo(bag)
+        }
+
+        private val indicator = view.findViewById<View>(R.id.statusIndicator)
+        private val buildTitle = view.findViewById<TextView>(R.id.buildTitle)
+        private val time = view.findViewById<TextView>(R.id.time)
+    }
+
+    fun finalize() = bag.dispose()
+
+    private val bag = CompositeDisposable()
+}
