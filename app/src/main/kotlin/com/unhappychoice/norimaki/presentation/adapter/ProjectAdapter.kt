@@ -6,4 +6,5 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.github.unhappychoice.circleci.response.Pr
+import com.github.unhappychoice.circleci.response.Project
+import com.jakewharton.rxbindi
