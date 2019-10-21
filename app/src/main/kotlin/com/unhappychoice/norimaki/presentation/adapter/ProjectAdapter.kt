@@ -9,4 +9,5 @@ import androidx.recyclerview.widget.RecyclerView
 import com.github.unhappychoice.circleci.response.Project
 import com.jakewharton.rxbinding2.view.clicks
 import com.unhappychoice.norimaki.R
-import c
+import com.unhappychoice.norimaki.extension.Variable
+i
