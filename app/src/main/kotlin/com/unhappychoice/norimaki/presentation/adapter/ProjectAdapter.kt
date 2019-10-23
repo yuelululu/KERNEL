@@ -10,4 +10,5 @@ import com.github.unhappychoice.circleci.response.Project
 import com.jakewharton.rxbinding2.view.clicks
 import com.unhappychoice.norimaki.R
 import com.unhappychoice.norimaki.extension.Variable
-import com.unhappychoice.norimaki.extension.su
+import com.unhappychoice.norimaki.extension.subscribeNext
+import io.reactivex.di
