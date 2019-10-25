@@ -11,4 +11,5 @@ import com.jakewharton.rxbinding2.view.clicks
 import com.unhappychoice.norimaki.R
 import com.unhappychoice.norimaki.extension.Variable
 import com.unhappychoice.norimaki.extension.subscribeNext
-import io.reactivex.di
+import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.
