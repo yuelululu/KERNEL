@@ -13,4 +13,6 @@ import com.unhappychoice.norimaki.extension.Variable
 import com.unhappychoice.norimaki.extension.subscribeNext
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.addTo
-import io.reactivex.subjec
+import io.reactivex.subjects.PublishSubject
+
+class ProjectAdapte
