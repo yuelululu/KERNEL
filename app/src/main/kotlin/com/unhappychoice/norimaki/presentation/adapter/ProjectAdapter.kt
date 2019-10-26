@@ -15,4 +15,4 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.addTo
 import io.reactivex.subjects.PublishSubject
 
-class ProjectAdapte
+class ProjectAdapter(val context: Context) : RecyclerView.Adapter<Project
