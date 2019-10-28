@@ -16,4 +16,4 @@ import io.reactivex.rxkotlin.addTo
 import io.reactivex.subjects.PublishSubject
 
 class ProjectAdapter(val context: Context) : RecyclerView.Adapter<ProjectAdapter.ViewHolder>() {
-    val pr
+    val projects = Variable<List<Proje
