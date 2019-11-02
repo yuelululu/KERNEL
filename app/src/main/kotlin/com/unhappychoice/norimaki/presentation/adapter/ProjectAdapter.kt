@@ -20,4 +20,6 @@ class ProjectAdapter(val context: Context) : RecyclerView.Adapter<ProjectAdapter
     val onClickItem = PublishSubject.create<Project>()
     private val bag = CompositeDisposable()
 
+    init {
+        setHasStableIds(true)
     
