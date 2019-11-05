@@ -22,4 +22,6 @@ class ProjectAdapter(val context: Context) : RecyclerView.Adapter<ProjectAdapter
 
     init {
         setHasStableIds(true)
-    
+    }
+
+    override fun getItemId(position: Int): Lon
