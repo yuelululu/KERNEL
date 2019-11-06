@@ -28,4 +28,4 @@ class ProjectAdapter(val context: Context) : RecyclerView.Adapter<ProjectAdapter
 
     override fun getItemCount(): Int = projects.value.size
 
-    override fun
+    override fun onCreateViewHolder(parent: View
