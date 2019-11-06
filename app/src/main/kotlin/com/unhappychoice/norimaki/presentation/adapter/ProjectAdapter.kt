@@ -24,4 +24,4 @@ class ProjectAdapter(val context: Context) : RecyclerView.Adapter<ProjectAdapter
         setHasStableIds(true)
     }
 
-    override fun getItemId(position: Int): Lon
+    override fun getItemId(position: Int): Long = projects.value[position].vcsUrl.hashCode(
