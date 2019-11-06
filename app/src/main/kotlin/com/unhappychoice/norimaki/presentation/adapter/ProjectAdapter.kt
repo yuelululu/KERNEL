@@ -30,4 +30,7 @@ class ProjectAdapter(val context: Context) : RecyclerView.Adapter<ProjectAdapter
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.project_list_item_view, parent, false)
-        return ViewHolder(vi
+        return ViewHolder(view)
+    }
+
+    override fun onBindViewHolder(h
