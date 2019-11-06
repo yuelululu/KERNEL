@@ -26,4 +26,6 @@ class ProjectAdapter(val context: Context) : RecyclerView.Adapter<ProjectAdapter
 
     override fun getItemId(position: Int): Long = projects.value[position].vcsUrl.hashCode().toLong()
 
-    override fun getIt
+    override fun getItemCount(): Int = projects.value.size
+
+    override fun
