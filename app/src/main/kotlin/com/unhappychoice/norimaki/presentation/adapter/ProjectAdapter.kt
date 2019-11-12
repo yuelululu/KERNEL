@@ -34,4 +34,6 @@ class ProjectAdapter(val context: Context) : RecyclerView.Adapter<ProjectAdapter
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        ho
+        holder.bind(projects.value[position])
+    }
+
