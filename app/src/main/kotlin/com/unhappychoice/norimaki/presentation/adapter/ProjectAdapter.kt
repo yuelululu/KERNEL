@@ -37,3 +37,4 @@ class ProjectAdapter(val context: Context) : RecyclerView.Adapter<ProjectAdapter
         holder.bind(projects.value[position])
     }
 
+    inner class ViewHolder(va
