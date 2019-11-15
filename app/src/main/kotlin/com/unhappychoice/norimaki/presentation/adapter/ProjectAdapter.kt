@@ -38,4 +38,4 @@ class ProjectAdapter(val context: Context) : RecyclerView.Adapter<ProjectAdapter
     }
 
     inner class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
-        private val projectNameView
+        private val projectNameView = view.findViewById<TextView>(R.
