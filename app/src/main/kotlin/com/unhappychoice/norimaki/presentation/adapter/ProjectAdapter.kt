@@ -43,4 +43,5 @@ class ProjectAdapter(val context: Context) : RecyclerView.Adapter<ProjectAdapter
         fun bind(project: Project) {
             projectNameView.text = "${project.username}/${project.reponame}"
 
-            view.click
+            view.clicks()
+                .subscribeNext { onClickItem
