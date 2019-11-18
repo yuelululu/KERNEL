@@ -41,4 +41,6 @@ class ProjectAdapter(val context: Context) : RecyclerView.Adapter<ProjectAdapter
         private val projectNameView = view.findViewById<TextView>(R.id.projectNameView)
 
         fun bind(project: Project) {
-            projectNameView.text = "${project.username}/${pr
+            projectNameView.text = "${project.username}/${project.reponame}"
+
+            view.click
