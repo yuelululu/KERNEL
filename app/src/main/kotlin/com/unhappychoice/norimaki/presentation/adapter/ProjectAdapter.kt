@@ -44,4 +44,7 @@ class ProjectAdapter(val context: Context) : RecyclerView.Adapter<ProjectAdapter
             projectNameView.text = "${project.username}/${project.reponame}"
 
             view.clicks()
-                .subscribeNext { onClickItem
+                .subscribeNext { onClickItem.onNext(project) }
+                .addTo(bag)
+        }
+    
