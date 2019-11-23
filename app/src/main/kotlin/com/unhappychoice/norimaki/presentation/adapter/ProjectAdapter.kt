@@ -47,4 +47,5 @@ class ProjectAdapter(val context: Context) : RecyclerView.Adapter<ProjectAdapter
                 .subscribeNext { onClickItem.onNext(project) }
                 .addTo(bag)
         }
-    
+    }
+}
