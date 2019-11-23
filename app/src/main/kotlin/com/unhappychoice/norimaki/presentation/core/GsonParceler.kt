@@ -2,4 +2,5 @@ package com.unhappychoice.norimaki.presentation.core
 
 import android.os.Parcel
 import android.os.Parcelable
-import co
+import com.google.gson.Gson
+import com.google.gson
