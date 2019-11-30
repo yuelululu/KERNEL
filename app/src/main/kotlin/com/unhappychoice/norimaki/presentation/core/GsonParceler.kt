@@ -7,4 +7,8 @@ import com.google.gson.stream.JsonReader
 import com.google.gson.stream.JsonWriter
 import com.unhappychoice.norimaki.presentation.screen.core.Screen
 import flow.KeyParceler
-import java.io.StringRea
+import java.io.StringReader
+import java.io.StringWriter
+
+/**
+ * From
