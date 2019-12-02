@@ -14,4 +14,4 @@ import java.io.StringWriter
  * From https://github.com/pyricau/dagger2-mortar-flow-experiment/blob/master/app/src/main/java/dagger/demo/mortarflow/GsonParceler.java
  */
 class GsonParceler : KeyParceler {
-    o
+    override fun toParcelable(key: Any): Parcel
