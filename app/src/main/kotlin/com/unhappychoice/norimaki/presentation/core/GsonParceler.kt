@@ -15,4 +15,5 @@ import java.io.StringWriter
  */
 class GsonParceler : KeyParceler {
     override fun toParcelable(key: Any): Parcelable = when (key) {
-        is Screen -> Wr
+        is Screen -> Wrapper(encode(key))
+        else -> thro
