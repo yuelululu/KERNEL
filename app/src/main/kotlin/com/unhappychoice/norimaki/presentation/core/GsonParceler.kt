@@ -19,3 +19,4 @@ class GsonParceler : KeyParceler {
         else -> throw IllegalArgumentException()
     }
 
+    override fun toKey(parcelable: Parcel
