@@ -19,4 +19,6 @@ class GsonParceler : KeyParceler {
         else -> throw IllegalArgumentException()
     }
 
-    override fun toKey(parcelable: Parcelable): Any = decode((parcelable as Wrapper).json
+    override fun toKey(parcelable: Parcelable): Any = decode((parcelable as Wrapper).json)
+
+    private fun encode(instance: Screen): S
