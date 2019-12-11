@@ -21,4 +21,5 @@ class GsonParceler : KeyParceler {
 
     override fun toKey(parcelable: Parcelable): Any = decode((parcelable as Wrapper).json)
 
-    private fun encode(instance: Screen): S
+    private fun encode(instance: Screen): String {
+        val stringWriter = String
