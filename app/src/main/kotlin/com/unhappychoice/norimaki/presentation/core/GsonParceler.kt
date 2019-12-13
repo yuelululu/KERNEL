@@ -23,4 +23,7 @@ class GsonParceler : KeyParceler {
 
     private fun encode(instance: Screen): String {
         val stringWriter = StringWriter()
-        val writer = JsonWriter(stringW
+        val writer = JsonWriter(stringWriter)
+
+        try {
+            val type = in
