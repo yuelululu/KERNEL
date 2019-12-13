@@ -26,4 +26,6 @@ class GsonParceler : KeyParceler {
         val writer = JsonWriter(stringWriter)
 
         try {
-            val type = in
+            val type = instance.javaClass
+
+            writer.beg
