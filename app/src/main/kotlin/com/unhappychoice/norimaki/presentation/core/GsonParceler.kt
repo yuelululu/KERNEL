@@ -28,4 +28,6 @@ class GsonParceler : KeyParceler {
         try {
             val type = instance.javaClass
 
-            writer.beg
+            writer.beginObject()
+            writer.name(type.name)
+      
