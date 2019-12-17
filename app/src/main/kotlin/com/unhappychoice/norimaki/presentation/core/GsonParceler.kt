@@ -32,4 +32,5 @@ class GsonParceler : KeyParceler {
             writer.name(type.name)
             gson.toJson(instance, type, writer)
             writer.endObject()
-            ret
+            return stringWriter.toString()
+      
