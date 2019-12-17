@@ -30,4 +30,4 @@ class GsonParceler : KeyParceler {
 
             writer.beginObject()
             writer.name(type.name)
-      
+            gson.toJson(instance, type, writer
