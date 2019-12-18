@@ -36,4 +36,6 @@ class GsonParceler : KeyParceler {
         } finally {
             writer.close()
         }
-   
+    }
+
+    private fun decode(json: String): 
