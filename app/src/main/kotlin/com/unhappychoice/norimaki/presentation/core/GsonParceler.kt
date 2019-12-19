@@ -38,4 +38,5 @@ class GsonParceler : KeyParceler {
         }
     }
 
-    private fun decode(json: String): 
+    private fun decode(json: String): Screen {
+        val reader = JsonReader(StringReader(json
