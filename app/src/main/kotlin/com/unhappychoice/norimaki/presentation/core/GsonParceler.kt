@@ -43,4 +43,4 @@ class GsonParceler : KeyParceler {
 
         try {
             reader.beginObject()
-  
+            val type = Class.forNam
