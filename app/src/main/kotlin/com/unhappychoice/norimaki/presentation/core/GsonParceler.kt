@@ -47,4 +47,7 @@ class GsonParceler : KeyParceler {
             return gson.fromJson(reader, type)
         } finally {
             reader.close()
-        
+        }
+    }
+
+    private val gson = Gson()
