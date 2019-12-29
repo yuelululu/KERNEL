@@ -52,4 +52,5 @@ class GsonParceler : KeyParceler {
 
     private val gson = Gson()
 
-    private class Wrapper(val json: St
+    private class Wrapper(val json: String) : Parcelable {
+        override fun describ
