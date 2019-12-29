@@ -51,3 +51,5 @@ class GsonParceler : KeyParceler {
     }
 
     private val gson = Gson()
+
+    private class Wrapper(val json: St
