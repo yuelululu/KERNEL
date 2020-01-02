@@ -54,4 +54,7 @@ class GsonParceler : KeyParceler {
 
     private class Wrapper(val json: String) : Parcelable {
         override fun describeContents(): Int = 0
-        override fun writeToParcel(parcel: Parcel, flags: Int) = pa
+        override fun writeToParcel(parcel: Parcel, flags: Int) = parcel.writeString(json)
+
+        companion object {
+        
