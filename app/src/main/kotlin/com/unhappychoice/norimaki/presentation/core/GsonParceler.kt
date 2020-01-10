@@ -57,4 +57,5 @@ class GsonParceler : KeyParceler {
         override fun writeToParcel(parcel: Parcel, flags: Int) = parcel.writeString(json)
 
         companion object {
-            @JvmField @Suppress("unused") val CREATOR 
+            @JvmField @Suppress("unused") val CREATOR = object : Parcelable.Creator<Wrapper> {
+        
