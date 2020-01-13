@@ -58,4 +58,4 @@ class GsonParceler : KeyParceler {
 
         companion object {
             @JvmField @Suppress("unused") val CREATOR = object : Parcelable.Creator<Wrapper> {
-        
+                override fun createFromParcel(data: Parcel
