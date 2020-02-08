@@ -49,3 +49,27 @@ class ScreenChanger(val activity: MainActivity) : KeyChanger {
         activity.supportActionBar?.setDisplayShowHomeEnabled(false)
         activity.supportActionBar?.title = screen.getTitle()
         activity.invalidateOptionsMenu()
+
+        if (screen is BuildListScreen) { activity.drawerToggle.syncState() }
+    }
+
+    private fun hasScreens(): Boolean =
+        Flow.get(activity).history.asIterable().filter { it !is APITokenScreen }.size > 1
+
+    private fun inject(screen: Screen, view: View) {
+        try {
+            (view as? BaseView<*>)?.let { baseView ->
+                val module = screen.module(activity.module)
+                baseView.di = module
+                baseView.presenter.di = module
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
+    private fun State.getScreen(): Screen? = getKey<Any?>() as? Screen
+
+    private fun Screen.inflateView(): View =
+        LayoutInflater.from(activity).inflate(getLayoutResource(), containerView, false)
+}
