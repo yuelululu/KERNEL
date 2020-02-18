@@ -8,4 +8,6 @@ import com.unhappychoice.norimaki.presentation.presenter.core.Presenter
 import com.unhappychoice.norimaki.presentation.screen.BuildListScreen
 import com.unhappychoice.norimaki.presentation.view.APITokenView
 import mortar.MortarScope
-im
+import org.kodein.di.instance
+
+class APIToken
