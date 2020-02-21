@@ -10,4 +10,5 @@ import com.unhappychoice.norimaki.presentation.view.APITokenView
 import mortar.MortarScope
 import org.kodein.di.instance
 
-class APIToken
+class APITokenPresenter: Presenter<APITokenView>() {
+  
