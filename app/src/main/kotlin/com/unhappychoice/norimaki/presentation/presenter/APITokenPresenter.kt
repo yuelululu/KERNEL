@@ -12,4 +12,6 @@ import org.kodein.di.instance
 
 class APITokenPresenter: Presenter<APITokenView>() {
     val activity: MainActivity by instance()
-    val token: Variable<String> = Variable
+    val token: Variable<String> = Variable("")
+
+    override fun onEnterScope(sc
