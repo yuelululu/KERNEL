@@ -16,4 +16,5 @@ class APITokenPresenter: Presenter<APITokenView>() {
 
     override fun onEnterScope(scope: MortarScope?) {
         super.onEnterScope(scope)
-        token.value = APITokenPref
+        token.value = APITokenPreference(activity.applicationContext).token
+    
