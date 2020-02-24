@@ -14,4 +14,5 @@ class APITokenPresenter: Presenter<APITokenView>() {
     val activity: MainActivity by instance()
     val token: Variable<String> = Variable("")
 
-    override fun onEnterScope(sc
+    override fun onEnterScope(scope: MortarScope?) {
+        super.onEnterSc
