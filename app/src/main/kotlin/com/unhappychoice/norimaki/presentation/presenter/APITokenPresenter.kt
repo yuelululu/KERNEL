@@ -23,4 +23,5 @@ class APITokenPresenter: Presenter<APITokenView>() {
         APITokenPreference(activity).token = token.value
     }
 
-    fun goToBuildList() = goTo(activity, BuildLi
+    fun goToBuildList() = goTo(activity, BuildListScreen(""))
+}
