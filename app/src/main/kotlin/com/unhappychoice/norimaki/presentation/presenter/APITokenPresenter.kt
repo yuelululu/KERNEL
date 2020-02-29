@@ -20,4 +20,5 @@ class APITokenPresenter: Presenter<APITokenView>() {
     }
 
     fun saveToken() {
-        APITokenPref
+        APITokenPreference(activity).token = token.value
+    }
