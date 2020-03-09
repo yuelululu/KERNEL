@@ -1,3 +1,4 @@
 package com.unhappychoice.norimaki.presentation.presenter
 
-import com.github.unhappychoice.circleci.response.
+import com.github.unhappychoice.circleci.response.Build
+import com.github.unhappychoice.
