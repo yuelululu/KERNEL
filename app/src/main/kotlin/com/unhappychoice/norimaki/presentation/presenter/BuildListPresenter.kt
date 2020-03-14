@@ -10,4 +10,5 @@ import com.unhappychoice.norimaki.domain.model.sortByQueuedAt
 import com.unhappychoice.norimaki.extension.Variable
 import com.unhappychoice.norimaki.extension.goTo
 import com.unhappychoice.norimaki.extension.subscribeNext
-import com.unhappychoice.norimaki.extension.subscribeOnIoObse
+import com.unhappychoice.norimaki.extension.subscribeOnIoObserveOnUI
+import com.unhappychoice.no
