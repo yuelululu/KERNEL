@@ -7,4 +7,5 @@ import com.gojuno.koptional.Optional
 import com.gojuno.koptional.Some
 import com.unhappychoice.norimaki.domain.model.addDistinctByNumber
 import com.unhappychoice.norimaki.domain.model.sortByQueuedAt
-import com.unhappycho
+import com.unhappychoice.norimaki.extension.Variable
+import com.unhapp
