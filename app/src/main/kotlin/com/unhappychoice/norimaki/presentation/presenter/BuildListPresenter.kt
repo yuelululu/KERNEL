@@ -16,4 +16,5 @@ import com.unhappychoice.norimaki.presentation.presenter.core.Paginatable
 import com.unhappychoice.norimaki.presentation.presenter.core.PresenterNeedsToken
 import com.unhappychoice.norimaki.presentation.screen.APITokenScreen
 import com.unhappychoice.norimaki.presentation.screen.BuildListScreen
-import com.unhappychoice.norimaki.presentation.scr
+import com.unhappychoice.norimaki.presentation.screen.BuildScreen
+import com.unhappychoice.nori
