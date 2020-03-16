@@ -13,4 +13,4 @@ import com.unhappychoice.norimaki.extension.subscribeNext
 import com.unhappychoice.norimaki.extension.subscribeOnIoObserveOnUI
 import com.unhappychoice.norimaki.presentation.presenter.core.Loadable
 import com.unhappychoice.norimaki.presentation.presenter.core.Paginatable
-impo
+import com.unhappychoice.norimaki.presentatio
