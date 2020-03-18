@@ -25,4 +25,4 @@ import io.reactivex.rxkotlin.addTo
 import mortar.MortarScope
 import org.kodein.di.instance
 
-class BuildListPr
+class BuildListPresenter: PresenterNeedsToken<BuildListView>
