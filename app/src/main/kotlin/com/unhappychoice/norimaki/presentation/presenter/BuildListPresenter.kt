@@ -23,3 +23,6 @@ import flow.Flow
 import io.reactivex.Observable
 import io.reactivex.rxkotlin.addTo
 import mortar.MortarScope
+import org.kodein.di.instance
+
+class BuildListPr
