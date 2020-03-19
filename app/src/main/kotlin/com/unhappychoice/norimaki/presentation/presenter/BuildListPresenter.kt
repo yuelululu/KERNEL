@@ -26,4 +26,5 @@ import mortar.MortarScope
 import org.kodein.di.instance
 
 class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Paginatable {
-    overrid
+    override val isLoading = Variable(false)
+    overr
