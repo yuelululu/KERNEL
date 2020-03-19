@@ -30,4 +30,6 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
     override val page = Variable(0)
     override val hasMore = Variable(true)
     val projectName: String by instance()
-    val build
+    val builds = Variable<List<Build>>(listOf())
+
+    o
