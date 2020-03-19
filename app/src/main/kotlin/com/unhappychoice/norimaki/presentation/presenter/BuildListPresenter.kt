@@ -32,4 +32,4 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
     val projectName: String by instance()
     val builds = Variable<List<Build>>(listOf())
 
-    o
+    override fun onEnterScope(scope: Mo
