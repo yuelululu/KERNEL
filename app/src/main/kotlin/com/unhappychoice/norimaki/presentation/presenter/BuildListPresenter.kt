@@ -28,4 +28,5 @@ import org.kodein.di.instance
 class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Paginatable {
     override val isLoading = Variable(false)
     override val page = Variable(0)
-    ove
+    override val hasMore = Variable(true)
+    val proje
