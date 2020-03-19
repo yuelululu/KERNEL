@@ -29,4 +29,5 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
     override val isLoading = Variable(false)
     override val page = Variable(0)
     override val hasMore = Variable(true)
-    val proje
+    val projectName: String by instance()
+    val build
