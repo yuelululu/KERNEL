@@ -25,4 +25,5 @@ import io.reactivex.rxkotlin.addTo
 import mortar.MortarScope
 import org.kodein.di.instance
 
-class BuildListPresenter: PresenterNeedsToken<BuildListView>
+class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Paginatable {
+    overrid
