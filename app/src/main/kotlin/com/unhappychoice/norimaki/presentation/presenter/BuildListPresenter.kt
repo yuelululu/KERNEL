@@ -34,4 +34,6 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
 
     override fun onEnterScope(scope: MortarScope?) {
         super.onEnterScope(scope)
-   
+        getBuilds()
+
+        pusher.buildListUpdat
