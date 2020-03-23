@@ -36,4 +36,6 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
         super.onEnterScope(scope)
         getBuilds()
 
-        pusher.buildListUpdat
+        pusher.buildListUpdated
+            .subscribeNext {
+                getB
