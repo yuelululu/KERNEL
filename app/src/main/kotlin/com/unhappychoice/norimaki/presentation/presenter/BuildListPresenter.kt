@@ -38,4 +38,5 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
 
         pusher.buildListUpdated
             .subscribeNext {
-                getB
+                getBuildsAPI(offset = 0)
+                    .sub
