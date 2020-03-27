@@ -40,4 +40,4 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
             .subscribeNext {
                 getBuildsAPI(offset = 0)
                     .subscribeOnIoObserveOnUI()
-                    .subscribeNext 
+                    .subscribeNext { builds.value = builds.value.addDistinctBy
