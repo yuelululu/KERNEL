@@ -40,4 +40,5 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
             .subscribeNext {
                 getBuildsAPI(offset = 0)
                     .subscribeOnIoObserveOnUI()
-                    .subscribeNext { builds.value = builds.value.addDistinctBy
+                    .subscribeNext { builds.value = builds.value.addDistinctByNumber(it).sortByQueuedAt() }
+            }.addTo(bag
