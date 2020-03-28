@@ -44,4 +44,5 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
             }.addTo(bag)
 
         eventBus.selectProject
-        
+            .map {
+                when(it
