@@ -47,4 +47,4 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
             .map {
                 when(it.toNullable()) {
                     null -> ""
-                    el
+                    else -> "${it.toNullable()!!.username
