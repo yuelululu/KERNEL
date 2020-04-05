@@ -47,4 +47,6 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
             .map {
                 when(it.toNullable()) {
                     null -> ""
-                    else -> "${it.toNullable()!!.username
+                    else -> "${it.toNullable()!!.username!!}/${it.toNullable()!!.reponame!!}"
+                }
+      
