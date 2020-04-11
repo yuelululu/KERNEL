@@ -50,4 +50,7 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
                     else -> "${it.toNullable()!!.username!!}/${it.toNullable()!!.reponame!!}"
                 }
             }
-            .subscribeNext { goToBui
+            .subscribeNext { goToBuildListView(it) }
+            .addTo(bag)
+    }
+
