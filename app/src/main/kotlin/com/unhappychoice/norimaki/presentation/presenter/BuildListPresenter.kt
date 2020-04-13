@@ -59,4 +59,5 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
         getBuildsAPI(offset = this.page.value * 20)
             .startLoading()
             .paginate()
-       
+            .subscribeOnIoObserveOnUI()
+            .subsc
