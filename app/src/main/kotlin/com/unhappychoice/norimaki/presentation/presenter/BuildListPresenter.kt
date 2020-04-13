@@ -57,4 +57,6 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
     fun getBuilds() {
         if (isLoading.value || !hasMore.value) return
         getBuildsAPI(offset = this.page.value * 20)
-          
+            .startLoading()
+            .paginate()
+       
