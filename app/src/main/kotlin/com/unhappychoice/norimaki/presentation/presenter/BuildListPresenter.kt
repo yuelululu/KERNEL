@@ -61,4 +61,7 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
             .paginate()
             .subscribeOnIoObserveOnUI()
             .subscribeNext { builds.value = builds.value.addDistinctByNumber(it).sortByQueuedAt() }
-            .ad
+            .addTo(bag)
+    }
+
+    fun goToBuildView(bu
