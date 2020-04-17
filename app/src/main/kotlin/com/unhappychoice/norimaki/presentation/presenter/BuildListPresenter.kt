@@ -64,4 +64,5 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
             .addTo(bag)
     }
 
-    fun goToBuildView(bu
+    fun goToBuildView(build: Build) {
+        goTo(activity, 
