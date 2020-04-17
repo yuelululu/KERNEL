@@ -65,4 +65,7 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
     }
 
     fun goToBuildView(build: Build) {
-        goTo(activity, 
+        goTo(activity, BuildScreen(build))
+    }
+
+    fun changeAPIT
