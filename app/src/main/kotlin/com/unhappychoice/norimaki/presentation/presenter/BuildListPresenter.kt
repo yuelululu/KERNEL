@@ -73,4 +73,4 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
     }
 
     private fun goToBuildListView(projectName: String) {
-        Flow.get(activity).replac
+        Flow.get(activity).replaceTop(BuildListScreen(projectName), Direc
