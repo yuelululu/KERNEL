@@ -69,4 +69,7 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
     }
 
     fun changeAPIToken() {
-        goTo(activity, APITokenScre
+        goTo(activity, APITokenScreen())
+    }
+
+    private fun goToBuildListView(project
