@@ -76,4 +76,5 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
         Flow.get(activity).replaceTop(BuildListScreen(projectName), Direction.REPLACE)
     }
 
-    private fun getBuildsAPI(offset: Int): Observab
+    private fun getBuildsAPI(offset: Int): Observable<List<Build>> =
+        when (projectNa
