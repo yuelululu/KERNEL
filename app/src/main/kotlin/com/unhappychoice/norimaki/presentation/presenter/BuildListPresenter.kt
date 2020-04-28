@@ -77,4 +77,5 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
     }
 
     private fun getBuildsAPI(offset: Int): Observable<List<Build>> =
-        when (projectNa
+        when (projectName) {
+            "" -> api.getRecentBu
