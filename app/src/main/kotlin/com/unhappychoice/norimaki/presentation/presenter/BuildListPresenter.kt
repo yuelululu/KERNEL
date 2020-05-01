@@ -82,4 +82,4 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
             else -> api.getProjectBuilds(userName = userName(), project = repoName(), offset = offset, limit = 20)
         }
 
-    pri
+    private fun userName(): String = projectName.split("/"
