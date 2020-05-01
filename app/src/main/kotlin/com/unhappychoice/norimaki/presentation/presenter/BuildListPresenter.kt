@@ -83,4 +83,5 @@ class BuildListPresenter: PresenterNeedsToken<BuildListView>(), Loadable, Pagina
         }
 
     private fun userName(): String = projectName.split("/").first()
-    private fun repoName(): S
+    private fun repoName(): String = projectName.split("/").last()
+}
