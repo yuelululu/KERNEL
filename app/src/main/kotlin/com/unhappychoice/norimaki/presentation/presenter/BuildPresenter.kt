@@ -44,3 +44,22 @@ class BuildPresenter : PresenterNeedsToken<BuildView>() {
     fun goToBuildStepScreen(buildStep: BuildStep) {
         if (buildStep.actions.isEmpty()) return
         goTo(activity, BuildStepScreen(build, buildStep))
+    }
+
+    fun rebuild() {
+        api.retryBuild(build.username!!, build.reponame!!, build.buildNum!!)
+            .subscribeOnIoObserveOnUI()
+            .subscribeNext { goBack(activity) }
+            .addTo(bag)
+    }
+
+    fun rebuildWithoutCache() {
+        api.deleteCache(build.username!!, build.reponame!!)
+            .map {
+                api.retryBuild(build.username!!, build.reponame!!, build.buildNum!!).subscribeOnIoObserveOnUI()
+            }.switchLatest()
+            .subscribeOnIoObserveOnUI()
+            .subscribeNext { goBack(activity) }
+            .addTo(bag)
+    }
+}
