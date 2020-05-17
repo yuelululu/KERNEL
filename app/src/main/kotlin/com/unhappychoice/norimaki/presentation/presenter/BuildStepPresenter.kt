@@ -5,4 +5,5 @@ import com.github.unhappychoice.circleci.response.BuildAction
 import com.github.unhappychoice.circleci.response.BuildStep
 import com.unhappychoice.norimaki.domain.model.step
 import com.unhappychoice.norimaki.extension.*
-import com.unhappychoice.norimaki.presentation.presenter.co
+import com.unhappychoice.norimaki.presentation.presenter.core.PresenterNeedsToken
+import com.unhappychoice.no
