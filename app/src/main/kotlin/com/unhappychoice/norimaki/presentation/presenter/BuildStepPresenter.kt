@@ -16,4 +16,5 @@ import org.json.JSONArray
 import org.kodein.di.instance
 
 class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
-    val 
+    val build: Build by instance()
+    val buildSt
