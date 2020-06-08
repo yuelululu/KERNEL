@@ -15,4 +15,5 @@ import okhttp3.Request
 import org.json.JSONArray
 import org.kodein.di.instance
 
-class BuildStepPresenter: PresenterNeedsToke
+class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
+    val 
