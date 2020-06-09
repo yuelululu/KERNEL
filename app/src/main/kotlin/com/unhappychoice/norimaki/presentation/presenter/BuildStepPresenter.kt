@@ -17,4 +17,6 @@ import org.kodein.di.instance
 
 class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
     val build: Build by instance()
-    val buildSt
+    val buildStep: BuildStep by instance()
+
+    val logSt
