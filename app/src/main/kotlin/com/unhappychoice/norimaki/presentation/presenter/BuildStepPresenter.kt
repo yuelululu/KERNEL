@@ -19,4 +19,4 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
     val build: Build by instance()
     val buildStep: BuildStep by instance()
 
-    val logSt
+    val logString: Variable<String> = Variable("")
