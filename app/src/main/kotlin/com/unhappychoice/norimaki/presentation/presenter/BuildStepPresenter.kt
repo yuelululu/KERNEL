@@ -21,4 +21,5 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
 
     val logString: Variable<String> = Variable("")
 
-    override fun onEnterScope(scope: Morta
+    override fun onEnterScope(scope: MortarScope?) {
+        super.onEnterScope(scope)
