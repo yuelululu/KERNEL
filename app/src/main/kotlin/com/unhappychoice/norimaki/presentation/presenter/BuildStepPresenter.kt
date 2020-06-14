@@ -23,3 +23,5 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
 
     override fun onEnterScope(scope: MortarScope?) {
         super.onEnterScope(scope)
+
+        pusher.appendActionEvents
