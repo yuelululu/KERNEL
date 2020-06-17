@@ -24,4 +24,5 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
     override fun onEnterScope(scope: MortarScope?) {
         super.onEnterScope(scope)
 
-        pusher.appendActionEvents
+        pusher.appendActionEvents(build)
+            .filter { it.step == buil
