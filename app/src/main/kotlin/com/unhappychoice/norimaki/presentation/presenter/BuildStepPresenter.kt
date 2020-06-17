@@ -25,4 +25,5 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
         super.onEnterScope(scope)
 
         pusher.appendActionEvents(build)
-            .filter { it.step == buil
+            .filter { it.step == buildStep.step() }
+            .map { it.out.message.removeAns
