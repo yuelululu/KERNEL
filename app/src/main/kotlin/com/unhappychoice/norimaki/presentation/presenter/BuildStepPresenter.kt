@@ -26,4 +26,4 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
 
         pusher.appendActionEvents(build)
             .filter { it.step == buildStep.step() }
-            .map { it.out.message.removeAns
+            .map { it.out.message.removeAnsiEscapeCode().replaceAnsiColorCode
