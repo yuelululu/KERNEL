@@ -27,4 +27,5 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
         pusher.appendActionEvents(build)
             .filter { it.step == buildStep.step() }
             .map { it.out.message.removeAnsiEscapeCode().replaceAnsiColorCodeToHtml() }
-            .subscribeOnIoObse
+            .subscribeOnIoObserveOnUI()
+            .subscribeNext { lo
