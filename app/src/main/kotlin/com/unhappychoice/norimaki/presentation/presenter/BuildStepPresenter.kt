@@ -28,4 +28,4 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
             .filter { it.step == buildStep.step() }
             .map { it.out.message.removeAnsiEscapeCode().replaceAnsiColorCodeToHtml() }
             .subscribeOnIoObserveOnUI()
-            .subscribeNext { lo
+            .subscribeNext { logString.value = logString.value + 
