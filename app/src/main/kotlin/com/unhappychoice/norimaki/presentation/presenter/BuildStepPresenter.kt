@@ -31,4 +31,8 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
             .subscribeNext { logString.value = logString.value + it }
             .addTo(bag)
 
-        getActi
+        getActions()
+    }
+
+    fun getActions() {
+    
