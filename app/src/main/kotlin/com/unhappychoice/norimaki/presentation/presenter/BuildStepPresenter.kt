@@ -35,4 +35,4 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
     }
 
     fun getActions() {
-    
+        val actions = buildStep.actions.filter { it.output
