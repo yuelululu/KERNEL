@@ -35,4 +35,5 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
     }
 
     fun getActions() {
-        val actions = buildStep.actions.filter { it.output
+        val actions = buildStep.actions.filter { it.outputUrl != null }
+        Observable.concat(actions.map { ge
