@@ -38,4 +38,5 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
         val actions = buildStep.actions.filter { it.outputUrl != null }
         Observable.concat(actions.map { getAction(it) })
             .map { it.removeAnsiEscapeCode().replaceAnsiColorCodeToHtml() }
-            .subscribeOnI
+            .subscribeOnIoObserveOnUI()
+            .subscribeNext { lo
