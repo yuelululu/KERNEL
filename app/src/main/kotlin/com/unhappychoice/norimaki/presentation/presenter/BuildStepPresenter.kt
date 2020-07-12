@@ -40,4 +40,7 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
             .map { it.removeAnsiEscapeCode().replaceAnsiColorCodeToHtml() }
             .subscribeOnIoObserveOnUI()
             .subscribeNext { logString.value = logString.value + it }
-       
+            .addTo(bag)
+    }
+
+    private fun getActi
