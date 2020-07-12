@@ -39,4 +39,5 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
         Observable.concat(actions.map { getAction(it) })
             .map { it.removeAnsiEscapeCode().replaceAnsiColorCodeToHtml() }
             .subscribeOnIoObserveOnUI()
-            .subscribeNext { lo
+            .subscribeNext { logString.value = logString.value + it }
+       
