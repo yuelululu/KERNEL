@@ -43,4 +43,5 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
             .addTo(bag)
     }
 
-    private fun getActi
+    private fun getAction(action: BuildAction): Observable<String> =
+        Observable.
