@@ -46,4 +46,4 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
     private fun getAction(action: BuildAction): Observable<String> =
         Observable.create { observer ->
             val client = OkHttpClient()
-            val requ
+            val request = Request.Builder().url(action.output
