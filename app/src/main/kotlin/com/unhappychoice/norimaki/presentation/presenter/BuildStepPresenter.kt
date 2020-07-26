@@ -48,4 +48,5 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
             val client = OkHttpClient()
             val request = Request.Builder().url(action.outputUrl).build()
             val response = client.newCall(request).execute().body().string()
-            val ou
+            val out = JSONArray(response).asSequence()
+  
