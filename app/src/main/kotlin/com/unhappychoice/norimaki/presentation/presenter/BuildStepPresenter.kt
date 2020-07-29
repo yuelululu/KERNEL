@@ -49,4 +49,4 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
             val request = Request.Builder().url(action.outputUrl).build()
             val response = client.newCall(request).execute().body().string()
             val out = JSONArray(response).asSequence()
-  
+                .map { it.getString("message
