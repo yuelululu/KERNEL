@@ -52,4 +52,6 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
                 .map { it.getString("message") }
                 .reduce { acc, string -> acc + string }
             observer.onNext(out)
-            observer.onComple
+            observer.onComplete()
+        }
+}
