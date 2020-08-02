@@ -51,4 +51,5 @@ class BuildStepPresenter: PresenterNeedsToken<BuildStepView>() {
             val out = JSONArray(response).asSequence()
                 .map { it.getString("message") }
                 .reduce { acc, string -> acc + string }
-            observer.onNex
+            observer.onNext(out)
+            observer.onComple
