@@ -6,4 +6,6 @@ import io.reactivex.Observable
 interface Loadable {
     val isLoading: Variable<Boolean>
 
-    fun <T> io.reactivex.Observable<T>.startLoading(): Observab
+    fun <T> io.reactivex.Observable<T>.startLoading(): Observable<T> {
+        isLoading.value = true
+  
