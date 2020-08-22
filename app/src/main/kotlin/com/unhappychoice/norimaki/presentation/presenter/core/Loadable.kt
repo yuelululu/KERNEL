@@ -8,4 +8,5 @@ interface Loadable {
 
     fun <T> io.reactivex.Observable<T>.startLoading(): Observable<T> {
         isLoading.value = true
-  
+        return this
+            .doOnError { isL
