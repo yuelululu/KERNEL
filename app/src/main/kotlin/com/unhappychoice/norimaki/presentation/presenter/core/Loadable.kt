@@ -11,4 +11,5 @@ interface Loadable {
         return this
             .doOnError { isLoading.value = false }
             .doOnComplete { isLoading.value = false }
-   
+    }
+}
