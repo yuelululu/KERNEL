@@ -7,4 +7,5 @@ import com.github.unhappychoice.circleci.response.User
 import com.unhappychoice.norimaki.MainActivity
 import com.unhappychoice.norimaki.domain.service.EventBusService
 import com.unhappychoice.norimaki.extension.goTo
-import com.unhapp
+import com.unhappychoice.norimaki.extension.subscribeNext
+import com.unh
