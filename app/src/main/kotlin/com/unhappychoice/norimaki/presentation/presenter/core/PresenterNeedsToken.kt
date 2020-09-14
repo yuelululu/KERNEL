@@ -8,4 +8,4 @@ import com.unhappychoice.norimaki.MainActivity
 import com.unhappychoice.norimaki.domain.service.EventBusService
 import com.unhappychoice.norimaki.extension.goTo
 import com.unhappychoice.norimaki.extension.subscribeNext
-import com.unh
+import com.unhappychoice.norimaki.extension.subscribeOnIoObser
