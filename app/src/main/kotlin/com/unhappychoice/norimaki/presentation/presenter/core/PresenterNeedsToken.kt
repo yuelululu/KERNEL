@@ -10,4 +10,4 @@ import com.unhappychoice.norimaki.extension.goTo
 import com.unhappychoice.norimaki.extension.subscribeNext
 import com.unhappychoice.norimaki.extension.subscribeOnIoObserveOnUI
 import com.unhappychoice.norimaki.extension.withLog
-import com.unhappychoice.nor
+import com.unhappychoice.norimaki.infrastructure.preference.APITokenPreferenc
