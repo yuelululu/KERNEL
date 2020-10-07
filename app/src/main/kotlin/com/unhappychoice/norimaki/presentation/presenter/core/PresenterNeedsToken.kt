@@ -16,4 +16,6 @@ import com.unhappychoice.norimaki.presentation.screen.APITokenScreen
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.addTo
 import mortar.MortarScope
-import or
+import org.kodein.di.instance
+
+abstract clas
