@@ -18,4 +18,4 @@ import io.reactivex.rxkotlin.addTo
 import mortar.MortarScope
 import org.kodein.di.instance
 
-abstract clas
+abstract class PresenterNeedsToken<T : View> : Presenter<T>() 
