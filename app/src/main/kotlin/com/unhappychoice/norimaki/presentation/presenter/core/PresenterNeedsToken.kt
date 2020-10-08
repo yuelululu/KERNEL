@@ -20,4 +20,5 @@ import org.kodein.di.instance
 
 abstract class PresenterNeedsToken<T : View> : Presenter<T>() {
     val activity: MainActivity by instance()
-    val api: CircleCIAPIClientV1 by insta
+    val api: CircleCIAPIClientV1 by instance()
+    val eventBus: EventBusService by i
