@@ -22,4 +22,6 @@ abstract class PresenterNeedsToken<T : View> : Presenter<T>() {
     val activity: MainActivity by instance()
     val api: CircleCIAPIClientV1 by instance()
     val eventBus: EventBusService by instance()
-    val pusher: PusherService by 
+    val pusher: PusherService by instance()
+
+    companion objec
