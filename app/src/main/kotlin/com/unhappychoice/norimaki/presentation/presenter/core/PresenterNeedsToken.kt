@@ -25,4 +25,8 @@ abstract class PresenterNeedsToken<T : View> : Presenter<T>() {
     val pusher: PusherService by instance()
 
     companion object {
-        var currentUser: User? = n
+        var currentUser: User? = null
+    }
+
+    val token
+        get() = 
