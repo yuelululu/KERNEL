@@ -24,4 +24,5 @@ abstract class PresenterNeedsToken<T : View> : Presenter<T>() {
     val eventBus: EventBusService by instance()
     val pusher: PusherService by instance()
 
-    companion objec
+    companion object {
+        var currentUser: User? = n
