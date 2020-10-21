@@ -31,4 +31,6 @@ abstract class PresenterNeedsToken<T : View> : Presenter<T>() {
     val token
         get() = APITokenPreference(activity).token
 
-    val bag 
+    val bag = CompositeDisposable()
+
+    override fun onEnt
