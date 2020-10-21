@@ -33,4 +33,5 @@ abstract class PresenterNeedsToken<T : View> : Presenter<T>() {
 
     val bag = CompositeDisposable()
 
-    override fun onEnt
+    override fun onEnterScope(scope: MortarScope?) {
+  
