@@ -29,4 +29,6 @@ abstract class PresenterNeedsToken<T : View> : Presenter<T>() {
     }
 
     val token
-        get() = 
+        get() = APITokenPreference(activity).token
+
+    val bag 
