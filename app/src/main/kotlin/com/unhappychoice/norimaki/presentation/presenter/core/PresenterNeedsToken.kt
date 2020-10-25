@@ -35,4 +35,7 @@ abstract class PresenterNeedsToken<T : View> : Presenter<T>() {
 
     override fun onEnterScope(scope: MortarScope?) {
         super.onEnterScope(scope)
-        aut
+        authenticate()
+    }
+
+    override fun onExitSco
