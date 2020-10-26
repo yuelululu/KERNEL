@@ -40,4 +40,7 @@ abstract class PresenterNeedsToken<T : View> : Presenter<T>() {
 
     override fun onExitScope() {
         bag.dispose()
-        sup
+        super.onExitScope()
+    }
+
+    private fun authenti
