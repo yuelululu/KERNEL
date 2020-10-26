@@ -43,4 +43,5 @@ abstract class PresenterNeedsToken<T : View> : Presenter<T>() {
         super.onExitScope()
     }
 
-    private fun authenti
+    private fun authenticate() {
+        if (token.isBlank()) return
