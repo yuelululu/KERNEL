@@ -45,4 +45,7 @@ abstract class PresenterNeedsToken<T : View> : Presenter<T>() {
 
     private fun authenticate() {
         if (token.isBlank()) return goToAPITokenView()
-        if (currentUser != n
+        if (currentUser != null) return
+
+        api.getMe()
+      
