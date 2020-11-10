@@ -48,4 +48,5 @@ abstract class PresenterNeedsToken<T : View> : Presenter<T>() {
         if (currentUser != null) return
 
         api.getMe()
-      
+            .subscribeOnIoObserveOnUI()
+          
