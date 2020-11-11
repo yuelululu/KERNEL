@@ -50,4 +50,5 @@ abstract class PresenterNeedsToken<T : View> : Presenter<T>() {
         api.getMe()
             .subscribeOnIoObserveOnUI()
             .withLog("getMe")
-            .doOnError {
+            .doOnError { goToAPITokenView() }
+            
