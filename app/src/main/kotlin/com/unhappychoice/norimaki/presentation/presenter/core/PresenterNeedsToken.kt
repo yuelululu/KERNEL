@@ -52,4 +52,4 @@ abstract class PresenterNeedsToken<T : View> : Presenter<T>() {
             .withLog("getMe")
             .doOnError { goToAPITokenView() }
             .doOnNext { currentUser = it }
-       
+            .subscribeNext { eventBus.authenti
