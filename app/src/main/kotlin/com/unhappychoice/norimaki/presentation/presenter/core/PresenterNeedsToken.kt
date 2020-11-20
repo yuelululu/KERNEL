@@ -56,4 +56,5 @@ abstract class PresenterNeedsToken<T : View> : Presenter<T>() {
             .addTo(bag)
     }
 
-    private fun goTo
+    private fun goToAPITokenView() {
+        Handler().po
