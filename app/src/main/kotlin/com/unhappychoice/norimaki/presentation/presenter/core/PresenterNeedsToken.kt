@@ -53,4 +53,7 @@ abstract class PresenterNeedsToken<T : View> : Presenter<T>() {
             .doOnError { goToAPITokenView() }
             .doOnNext { currentUser = it }
             .subscribeNext { eventBus.authenticated.onNext(Pair(token, it.pusherId)) }
-            
+            .addTo(bag)
+    }
+
+    private fun goTo
