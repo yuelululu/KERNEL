@@ -57,4 +57,7 @@ abstract class PresenterNeedsToken<T : View> : Presenter<T>() {
     }
 
     private fun goToAPITokenView() {
-        Handler().postDelayed({ goTo(activity, APITokenScreen
+        Handler().postDelayed({ goTo(activity, APITokenScreen()) }, 500)
+    }
+}
+
