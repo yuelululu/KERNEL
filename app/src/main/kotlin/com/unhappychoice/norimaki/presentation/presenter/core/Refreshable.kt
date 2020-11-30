@@ -7,4 +7,5 @@ interface Refreshable {
     val isRefreshing: Variable<Boolean>
     fun refresh()
 
-    fun <T> Observab
+    fun <T> Observable<T>.startRefresh(): Observable<T> {
+        is
