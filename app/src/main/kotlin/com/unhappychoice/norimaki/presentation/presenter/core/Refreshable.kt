@@ -4,4 +4,7 @@ import com.unhappychoice.norimaki.extension.Variable
 import io.reactivex.Observable
 
 interface Refreshable {
-    val isRefreshing: Variable<Boo
+    val isRefreshing: Variable<Boolean>
+    fun refresh()
+
+    fun <T> Observab
