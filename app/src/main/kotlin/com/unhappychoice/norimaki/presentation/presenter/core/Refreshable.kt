@@ -8,4 +8,5 @@ interface Refreshable {
     fun refresh()
 
     fun <T> Observable<T>.startRefresh(): Observable<T> {
-        is
+        isRefreshing.value = true
+        return
