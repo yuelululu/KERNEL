@@ -10,4 +10,5 @@ interface Refreshable {
     fun <T> Observable<T>.startRefresh(): Observable<T> {
         isRefreshing.value = true
         return this
-            .doOnError { isRefreshing.valu
+            .doOnError { isRefreshing.value = false }
+            .doOnComplete { isRefreshing.valu
