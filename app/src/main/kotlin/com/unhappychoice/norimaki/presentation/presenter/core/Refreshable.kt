@@ -9,4 +9,5 @@ interface Refreshable {
 
     fun <T> Observable<T>.startRefresh(): Observable<T> {
         isRefreshing.value = true
-        return
+        return this
+            .doOnError { isRefreshing.valu
