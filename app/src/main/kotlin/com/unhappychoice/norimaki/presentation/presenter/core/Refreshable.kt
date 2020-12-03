@@ -11,4 +11,6 @@ interface Refreshable {
         isRefreshing.value = true
         return this
             .doOnError { isRefreshing.value = false }
-            .doOnComplete { isRefreshing.valu
+            .doOnComplete { isRefreshing.value = false }
+    }
+}
