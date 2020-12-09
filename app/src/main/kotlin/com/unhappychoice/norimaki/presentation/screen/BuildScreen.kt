@@ -9,4 +9,4 @@ import org.kodein.di.bind
 import org.kodein.di.singleton
 
 class BuildScreen(val build: Build) : Screen() {
-    overrid
+    override fun getTitle(): String = buil
