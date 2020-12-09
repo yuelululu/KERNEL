@@ -8,4 +8,5 @@ import org.kodein.di.DI
 import org.kodein.di.bind
 import org.kodein.di.singleton
 
-class Build
+class BuildScreen(val build: Build) : Screen() {
+    overrid
