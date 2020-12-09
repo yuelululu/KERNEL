@@ -6,4 +6,6 @@ import com.unhappychoice.norimaki.domain.model.revisionString
 import com.unhappychoice.norimaki.presentation.screen.core.Screen
 import org.kodein.di.DI
 import org.kodein.di.bind
-impo
+import org.kodein.di.singleton
+
+class Build
