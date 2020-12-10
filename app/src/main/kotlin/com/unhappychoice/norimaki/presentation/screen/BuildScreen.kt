@@ -10,4 +10,4 @@ import org.kodein.di.singleton
 
 class BuildScreen(val build: Build) : Screen() {
     override fun getTitle(): String = build.revisionString()
-    override f
+    override fun getLayoutResource() = R.layout.buil
