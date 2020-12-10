@@ -11,4 +11,5 @@ import org.kodein.di.singleton
 class BuildScreen(val build: Build) : Screen() {
     override fun getTitle(): String = build.revisionString()
     override fun getLayoutResource() = R.layout.build_view
-    override fun module
+    override fun module(activityModule: DI) = DI {
+        extend(activityModule)
