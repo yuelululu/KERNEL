@@ -13,3 +13,4 @@ class BuildScreen(val build: Build) : Screen() {
     override fun getLayoutResource() = R.layout.build_view
     override fun module(activityModule: DI) = DI {
         extend(activityModule)
+        bind<Build>() with singleton  { b
