@@ -5,4 +5,5 @@ import com.github.unhappychoice.circleci.response.BuildStep
 import com.unhappychoice.norimaki.R
 import com.unhappychoice.norimaki.presentation.screen.core.Screen
 import org.kodein.di.DI
-impor
+import org.kodein.di.bind
+import org.kodein.di.s
