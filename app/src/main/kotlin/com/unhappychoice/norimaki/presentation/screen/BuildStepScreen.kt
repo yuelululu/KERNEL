@@ -8,4 +8,4 @@ import org.kodein.di.DI
 import org.kodein.di.bind
 import org.kodein.di.singleton
 
-class BuildStepScreen(v
+class BuildStepScreen(val build: Build, val buildStep: BuildStep) : 
