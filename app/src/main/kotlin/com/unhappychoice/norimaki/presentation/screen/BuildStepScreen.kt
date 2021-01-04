@@ -8,4 +8,5 @@ import org.kodein.di.DI
 import org.kodein.di.bind
 import org.kodein.di.singleton
 
-class BuildStepScreen(val build: Build, val buildStep: BuildStep) : 
+class BuildStepScreen(val build: Build, val buildStep: BuildStep) : Screen() {
+    override fun getTitle(): Str
