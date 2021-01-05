@@ -10,4 +10,5 @@ import org.kodein.di.singleton
 
 class BuildStepScreen(val build: Build, val buildStep: BuildStep) : Screen() {
     override fun getTitle(): String = buildStep.name
-    override fun getLa
+    override fun getLayoutResource() = R.layout.build_step_view
+   
