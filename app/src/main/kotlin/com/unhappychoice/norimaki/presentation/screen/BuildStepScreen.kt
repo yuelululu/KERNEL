@@ -14,4 +14,6 @@ class BuildStepScreen(val build: Build, val buildStep: BuildStep) : Screen() {
     override fun module(activityModule: DI) = DI {
         extend(activityModule)
         bind<Build>() with singleton { build }
-        bind<BuildStep>() with singl
+        bind<BuildStep>() with singleton { buildStep }
+    }
+}
