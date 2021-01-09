@@ -13,3 +13,4 @@ class BuildStepScreen(val build: Build, val buildStep: BuildStep) : Screen() {
     override fun getLayoutResource() = R.layout.build_step_view
     override fun module(activityModule: DI) = DI {
         extend(activityModule)
+        bind<Build>() with singleton { build 
