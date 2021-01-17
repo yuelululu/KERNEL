@@ -1,3 +1,4 @@
 package com.unhappychoice.norimaki.presentation.screen.core
 
-import an
+import androidx.annotation.LayoutRes
+i
