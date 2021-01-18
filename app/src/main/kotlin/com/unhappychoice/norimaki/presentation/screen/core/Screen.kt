@@ -4,4 +4,6 @@ import androidx.annotation.LayoutRes
 import flow.ClassKey
 import org.kodein.di.DI
 
-abstract class Screen : ClassKey(
+abstract class Screen : ClassKey() {
+    @LayoutRes
+    abstract
