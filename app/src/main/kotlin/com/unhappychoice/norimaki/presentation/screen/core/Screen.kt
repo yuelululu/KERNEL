@@ -8,4 +8,4 @@ abstract class Screen : ClassKey() {
     @LayoutRes
     abstract fun getLayoutResource(): Int
     abstract fun getTitle(): String
-    open fun module(
+    open fun module(activityModule: DI): DI = DI { extend(activityM
