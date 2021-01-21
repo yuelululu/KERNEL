@@ -7,4 +7,5 @@ import org.kodein.di.DI
 abstract class Screen : ClassKey() {
     @LayoutRes
     abstract fun getLayoutResource(): Int
-    abst
+    abstract fun getTitle(): String
+    open fun module(
