@@ -1,1 +1,3 @@
-package com.unhappychoice.norimaki.present
+package com.unhappychoice.norimaki.presentation.view
+
+import android.content.Co
