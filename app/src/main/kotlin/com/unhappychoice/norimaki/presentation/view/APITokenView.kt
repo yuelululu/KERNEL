@@ -7,4 +7,5 @@ import android.view.LayoutInflater
 import com.jakewharton.rxbinding2.view.clicks
 import com.jakewharton.rxbinding2.widget.textChanges
 import com.unhappychoice.norimaki.databinding.ApiTokenViewBinding
-import com.unhapp
+import com.unhappychoice.norimaki.extension.bindTo
+impor
