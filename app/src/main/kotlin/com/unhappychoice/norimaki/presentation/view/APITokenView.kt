@@ -14,4 +14,4 @@ import com.unhappychoice.norimaki.presentation.view.core.BaseView
 import io.reactivex.rxkotlin.addTo
 import org.kodein.di.instance
 
-class AP
+class APITokenView(context: Context?, attr: Att
