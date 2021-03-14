@@ -14,4 +14,5 @@ import com.unhappychoice.norimaki.presentation.view.core.BaseView
 import io.reactivex.rxkotlin.addTo
 import org.kodein.di.instance
 
-class APITokenView(context: Context?, attr: AttributeSet?) : BaseView<APITokenView>(context
+class APITokenView(context: Context?, attr: AttributeSet?) : BaseView<APITokenView>(context, attr) {
+    override val presenter: A
