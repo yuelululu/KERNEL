@@ -15,4 +15,6 @@ import io.reactivex.rxkotlin.addTo
 import org.kodein.di.instance
 
 class APITokenView(context: Context?, attr: AttributeSet?) : BaseView<APITokenView>(context, attr) {
-    override val presenter: A
+    override val presenter: APITokenPresenter by instance()
+
+    private val
