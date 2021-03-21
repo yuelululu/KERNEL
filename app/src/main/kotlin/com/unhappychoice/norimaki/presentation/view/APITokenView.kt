@@ -17,4 +17,5 @@ import org.kodein.di.instance
 class APITokenView(context: Context?, attr: AttributeSet?) : BaseView<APITokenView>(context, attr) {
     override val presenter: APITokenPresenter by instance()
 
-    private val
+    private val binding by lazy {
+        ApiTokenViewBinding.bin
