@@ -18,4 +18,7 @@ class APITokenView(context: Context?, attr: AttributeSet?) : BaseView<APITokenVi
     override val presenter: APITokenPresenter by instance()
 
     private val binding by lazy {
-        ApiTokenViewBinding.bin
+        ApiTokenViewBinding.bind(this)
+    }
+
+    override fun onAttachedToWindow() {
