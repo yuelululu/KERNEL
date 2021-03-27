@@ -22,3 +22,5 @@ class APITokenView(context: Context?, attr: AttributeSet?) : BaseView<APITokenVi
     }
 
     override fun onAttachedToWindow() {
+        super.onAttachedToWindow()
+        presenter.take
