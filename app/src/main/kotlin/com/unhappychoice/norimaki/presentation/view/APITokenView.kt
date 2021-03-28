@@ -25,4 +25,6 @@ class APITokenView(context: Context?, attr: AttributeSet?) : BaseView<APITokenVi
         super.onAttachedToWindow()
         presenter.takeView(this)
 
-        Log.d("binder", binding?.toStri
+        Log.d("binder", binding?.toString() ?: "null")
+
+        binding.accessTokenTextView.
