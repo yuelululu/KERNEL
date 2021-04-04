@@ -27,4 +27,5 @@ class APITokenView(context: Context?, attr: AttributeSet?) : BaseView<APITokenVi
 
         Log.d("binder", binding?.toString() ?: "null")
 
-        binding.accessTokenTextView.
+        binding.accessTokenTextView.setText(presenter.token.value)
+        
