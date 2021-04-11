@@ -31,4 +31,5 @@ class APITokenView(context: Context?, attr: AttributeSet?) : BaseView<APITokenVi
         binding.accessTokenTextView.textChanges()
             .doOnNext { Log.d("D", it.toString()) }
             .map { it.toString() }
-            .filter { it.isNotEmp
+            .filter { it.isNotEmpty() }
+            .bindTo(present
