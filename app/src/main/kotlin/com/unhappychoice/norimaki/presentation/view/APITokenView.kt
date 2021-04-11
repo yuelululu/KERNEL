@@ -29,4 +29,6 @@ class APITokenView(context: Context?, attr: AttributeSet?) : BaseView<APITokenVi
 
         binding.accessTokenTextView.setText(presenter.token.value)
         binding.accessTokenTextView.textChanges()
-            .doOnNext { Log.d("D", it.toSt
+            .doOnNext { Log.d("D", it.toString()) }
+            .map { it.toString() }
+ 
