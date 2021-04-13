@@ -35,4 +35,5 @@ class APITokenView(context: Context?, attr: AttributeSet?) : BaseView<APITokenVi
             .bindTo(presenter.token)
             .addTo(bag)
 
-        binding
+        binding.submitButton.clicks()
+            .doOn
