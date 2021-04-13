@@ -32,4 +32,7 @@ class APITokenView(context: Context?, attr: AttributeSet?) : BaseView<APITokenVi
             .doOnNext { Log.d("D", it.toString()) }
             .map { it.toString() }
             .filter { it.isNotEmpty() }
-            .bindTo(present
+            .bindTo(presenter.token)
+            .addTo(bag)
+
+        binding
