@@ -37,4 +37,5 @@ class APITokenView(context: Context?, attr: AttributeSet?) : BaseView<APITokenVi
 
         binding.submitButton.clicks()
             .doOnNext { Log.d("D", it.toString()) }
-        
+            .subscribeNext {
+                pres
