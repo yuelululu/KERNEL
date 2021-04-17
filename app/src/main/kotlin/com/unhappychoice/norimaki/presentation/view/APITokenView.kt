@@ -36,4 +36,5 @@ class APITokenView(context: Context?, attr: AttributeSet?) : BaseView<APITokenVi
             .addTo(bag)
 
         binding.submitButton.clicks()
-            .doOn
+            .doOnNext { Log.d("D", it.toString()) }
+        
