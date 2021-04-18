@@ -40,4 +40,7 @@ class APITokenView(context: Context?, attr: AttributeSet?) : BaseView<APITokenVi
             .subscribeNext {
                 presenter.saveToken()
                 presenter.goToBuildList()
-            }.addTo(
+            }.addTo(bag)
+    }
+
+    override fun onDet
