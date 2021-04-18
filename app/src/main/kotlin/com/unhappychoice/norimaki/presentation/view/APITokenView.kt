@@ -39,4 +39,5 @@ class APITokenView(context: Context?, attr: AttributeSet?) : BaseView<APITokenVi
             .doOnNext { Log.d("D", it.toString()) }
             .subscribeNext {
                 presenter.saveToken()
-             
+                presenter.goToBuildList()
+            }.addTo(
