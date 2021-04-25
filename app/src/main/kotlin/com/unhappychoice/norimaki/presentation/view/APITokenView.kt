@@ -43,4 +43,5 @@ class APITokenView(context: Context?, attr: AttributeSet?) : BaseView<APITokenVi
             }.addTo(bag)
     }
 
-    override fun onDet
+    override fun onDetachedFromWindow() {
+        prese
