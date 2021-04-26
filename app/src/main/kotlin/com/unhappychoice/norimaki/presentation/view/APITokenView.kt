@@ -45,4 +45,6 @@ class APITokenView(context: Context?, attr: AttributeSet?) : BaseView<APITokenVi
 
     override fun onDetachedFromWindow() {
         presenter.dropView(this)
-        super.onD
+        super.onDetachedFromWindow()
+    }
+}
