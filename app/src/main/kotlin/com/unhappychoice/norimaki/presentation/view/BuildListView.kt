@@ -17,3 +17,41 @@ import com.unhappychoice.norimaki.extension.subscribeNext
 import com.unhappychoice.norimaki.extension.subscribeOnIoObserveOnUI
 import com.unhappychoice.norimaki.presentation.adapter.BuildAdapter
 import com.unhappychoice.norimaki.presentation.presenter.BuildListPresenter
+import com.unhappychoice.norimaki.presentation.view.core.BaseView
+import com.unhappychoice.norimaki.presentation.view.core.HasMenu
+import io.reactivex.rxkotlin.addTo
+import org.kodein.di.instance
+
+class BuildListView(context: Context, attr: AttributeSet) : BaseView<BuildListView>(context, attr), HasMenu {
+    override val presenter: BuildListPresenter by instance()
+    private val adapter = BuildAdapter(context)
+
+    private val binding by lazy {
+        BuildListViewBinding.bind(this)
+    }
+
+    private enum class MenuResource(val id: Int) {
+        LogOut(0)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?) {
+        menu?.add(Menu.NONE, MenuResource.LogOut.id, Menu.NONE, "Change API Token")
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?) {
+        when (item?.itemId) {
+            MenuResource.LogOut.id -> presenter.changeAPIToken()
+        }
+    }
+
+    override fun dispatchRestoreInstanceState(container: SparseArray<Parcelable>?) {
+        super.dispatchRestoreInstanceState(container)
+        binding.buildsView.restoreHierarchyState(container)
+    }
+
+    override fun onAttachedToWindow() {
+        super.onAttachedToWindow()
+        presenter.takeView(this)
+
+        binding.buildsView.adapter = adapter
+        binding.buildsView.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
