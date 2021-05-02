@@ -55,3 +55,28 @@ class BuildListView(context: Context, attr: AttributeSet) : BaseView<BuildListVi
 
         binding.buildsView.adapter = adapter
         binding.buildsView.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
+
+        adapter.builds.value = presenter.builds.value
+
+        presenter.builds.asObservable()
+            .subscribeOnIoObserveOnUI()
+            .subscribeNext {
+                adapter.builds.value = it
+                adapter.notifyDataSetChanged()
+            }.addTo(bag)
+
+        adapter.onClickItem
+            .subscribeNext { presenter.goToBuildView(it) }
+            .addTo(bag)
+
+        binding.buildsView.scrollEvents()
+            .filter { binding.buildsView.isNearEnd() }
+            .subscribeNext { presenter.getBuilds() }
+            .addTo(bag)
+    }
+
+    override fun onDetachedFromWindow() {
+        presenter.dropView(this)
+        super.onDetachedFromWindow()
+    }
+}
