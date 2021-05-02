@@ -12,3 +12,26 @@ import com.unhappychoice.norimaki.presentation.presenter.BuildStepPresenter
 import com.unhappychoice.norimaki.presentation.view.core.BaseView
 import io.reactivex.rxkotlin.addTo
 import org.kodein.di.instance
+
+class BuildStepView(context: Context, attr: AttributeSet) : BaseView<BuildStepView>(context, attr) {
+    override val presenter: BuildStepPresenter by instance()
+
+    private val binding by lazy {
+        BuildStepViewBinding.bind(this)
+    }
+
+    override fun onAttachedToWindow() {
+        super.onAttachedToWindow()
+        presenter.takeView(this)
+
+        presenter.logString.asObservable()
+            .subscribeOnIoObserveOnUI()
+            .subscribeNext { binding.logText.text = Html.fromHtml(it.replace("\n", "<br>")) }
+            .addTo(bag)
+    }
+
+    override fun onDetachedFromWindow() {
+        presenter.dropView(this)
+        super.onDetachedFromWindow()
+    }
+}
