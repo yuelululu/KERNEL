@@ -33,3 +33,37 @@ class BuildView(context: Context, attr: AttributeSet) : BaseView<BuildView>(cont
     }
 
     override fun onOptionsItemSelected(item: MenuItem?) {
+        when (item?.itemId) {
+            MenuResource.Rebuild.id -> presenter.rebuild()
+            MenuResource.RebuildWithoutCache.id -> presenter.rebuildWithoutCache()
+        }
+    }
+
+    private enum class MenuResource(val id: Int) {
+        Rebuild(0), RebuildWithoutCache(1)
+    }
+
+    override fun onAttachedToWindow() {
+        super.onAttachedToWindow()
+        presenter.takeView(this)
+
+        binding.stepsView.adapter = adapter
+        binding.stepsView.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
+
+        presenter.steps.asObservable()
+            .subscribeOnIoObserveOnUI()
+            .subscribeNext {
+                adapter.steps.value = it
+                adapter.notifyDataSetChanged()
+            }.addTo(bag)
+
+        adapter.onClickItem
+            .subscribeNext { presenter.goToBuildStepScreen(it) }
+            .addTo(bag)
+    }
+
+    override fun onDetachedFromWindow() {
+        presenter.dropView(this)
+        super.onDetachedFromWindow()
+    }
+}
