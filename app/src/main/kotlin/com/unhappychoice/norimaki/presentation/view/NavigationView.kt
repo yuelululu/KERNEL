@@ -20,3 +20,46 @@ import com.unhappychoice.norimaki.extension.subscribeNext
 import com.unhappychoice.norimaki.extension.subscribeOnIoObserveOnUI
 import com.unhappychoice.norimaki.presentation.adapter.ProjectAdapter
 import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.rxkotlin.addTo
+import org.kodein.di.DI
+import org.kodein.di.DIAware
+import org.kodein.di.instance
+import com.google.android.material.navigation.NavigationView as AndroidNavigationView
+
+class NavigationView(context: Context, attr: AttributeSet): AndroidNavigationView(context, attr), DIAware {
+    override lateinit var di: DI
+
+    private val binding by lazy {
+        NavigationViewBinding.bind(this)
+    }
+
+    private val client: CircleCIAPIClientV1 by instance()
+    private val eventBus: EventBusService by instance()
+    private val adapter = ProjectAdapter(context)
+    private val bag = CompositeDisposable()
+
+    init {
+        LayoutInflater.from(context).inflate(R.layout.navigation_view, this, true)
+    }
+
+    @SuppressLint("RestrictedApi")
+    override fun onAttachedToWindow() {
+        super.onAttachedToWindow()
+
+        binding.projectsView.adapter = adapter
+        binding.projectsView.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
+
+        client.getProjects()
+            .subscribeOnIoObserveOnUI()
+            .subscribeNext {
+                adapter.projects.value = it
+                adapter.notifyDataSetChanged()
+            }.addTo(bag)
+
+        client.getMe()
+            .subscribeOnIoObserveOnUI()
+            .subscribeNext {
+                Glide.with(context).load(it.avatarUrl).into(binding.profileImageView)
+                binding.nameView.text = it.login
+            }
+            .addTo(bag)
