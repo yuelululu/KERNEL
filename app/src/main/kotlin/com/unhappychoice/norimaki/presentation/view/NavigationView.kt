@@ -63,3 +63,24 @@ class NavigationView(context: Context, attr: AttributeSet): AndroidNavigationVie
                 binding.nameView.text = it.login
             }
             .addTo(bag)
+
+        binding.recentView.clicks()
+            .subscribeNext {
+                (context as? MainActivity)?.binding?.drawerLayout?.closeDrawers()
+                eventBus.selectProject.onNext(None)
+            }
+            .addTo(bag)
+
+        adapter.onClickItem
+            .subscribeNext {
+                (context as? MainActivity)?.binding?.drawerLayout?.closeDrawers()
+                eventBus.selectProject.onNext(Some(it))
+            }
+            .addTo(bag)
+    }
+
+    @SuppressLint("RestrictedApi")
+    override fun onDetachedFromWindow() {
+        super.onDetachedFromWindow()
+    }
+}
