@@ -5,4 +5,7 @@ import android.util.AttributeSet
 import android.widget.LinearLayout
 import com.unhappychoice.norimaki.presentation.presenter.core.Presenter
 import io.reactivex.disposables.CompositeDisposable
-import org.kodein.di.
+import org.kodein.di.DI
+import org.kodein.di.DIAware
+
+abstract
