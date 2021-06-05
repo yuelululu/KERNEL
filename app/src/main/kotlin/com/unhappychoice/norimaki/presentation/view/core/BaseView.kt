@@ -11,4 +11,5 @@ import org.kodein.di.DIAware
 abstract class BaseView<Self: BaseView<Self>>(
     context: Context?,
     attr: AttributeSet?
-) : Linear
+) : LinearLayout(context, attr), DIAware {
+    over
