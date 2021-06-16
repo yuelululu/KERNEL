@@ -14,4 +14,6 @@ abstract class BaseView<Self: BaseView<Self>>(
 ) : LinearLayout(context, attr), DIAware {
     override lateinit var di: DI
 
-    abs
+    abstract val presenter: Presenter<Self>
+
+ 
