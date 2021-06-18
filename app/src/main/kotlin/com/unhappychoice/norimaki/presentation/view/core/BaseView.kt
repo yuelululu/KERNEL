@@ -16,4 +16,7 @@ abstract class BaseView<Self: BaseView<Self>>(
 
     abstract val presenter: Presenter<Self>
 
-    protected val bag = CompositeDisposable
+    protected val bag = CompositeDisposable()
+
+    override fun onDetachedFromWindow() {
+        bag
