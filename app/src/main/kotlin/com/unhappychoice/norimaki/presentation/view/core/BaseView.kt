@@ -19,4 +19,6 @@ abstract class BaseView<Self: BaseView<Self>>(
     protected val bag = CompositeDisposable()
 
     override fun onDetachedFromWindow() {
-        bag
+        bag.dispose()
+        super.onDetachedFromWindow()
+    
