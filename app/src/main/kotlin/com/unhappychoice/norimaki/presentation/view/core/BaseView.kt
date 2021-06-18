@@ -21,4 +21,5 @@ abstract class BaseView<Self: BaseView<Self>>(
     override fun onDetachedFromWindow() {
         bag.dispose()
         super.onDetachedFromWindow()
-    
+    }
+}
