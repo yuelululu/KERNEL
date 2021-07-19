@@ -1,2 +1,4 @@
 Norimaki is a CircleCI client for Android.
-This app is OSS project and yo
+This app is OSS project and you can check github repository below.
+
+https://github.
