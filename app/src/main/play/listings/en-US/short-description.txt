@@ -1,1 +1,1 @@
-Norimaki is a CircleC
+Norimaki is a CircleCI client for Android
