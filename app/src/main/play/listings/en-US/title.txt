@@ -1,1 +1,1 @@
-Norimaki - CircleCI
+Norimaki - CircleCI client for Android
