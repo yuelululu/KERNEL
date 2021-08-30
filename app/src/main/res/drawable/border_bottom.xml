@@ -6,4 +6,5 @@
         </shape>
     </item>
     <item
-        
+        android:left="-2dp"
+        android:r
