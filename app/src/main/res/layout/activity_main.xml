@@ -8,4 +8,4 @@
     android:background="#FFFFFF"
     tools:context=".MainActivity">
 
-    <andro
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
