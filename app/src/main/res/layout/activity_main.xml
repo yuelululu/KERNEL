@@ -9,3 +9,4 @@
     tools:context=".MainActivity">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_pa
