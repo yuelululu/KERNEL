@@ -9,4 +9,5 @@
     tools:context=".MainActivity">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="match_pa
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
