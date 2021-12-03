@@ -25,4 +25,5 @@
         </com.google.android.material.appbar.AppBarLayout>
 
         <FrameLayout
-            android:id="@+id/containerVie
+            android:id="@+id/containerView"
+            android:layout_width="match_parent
