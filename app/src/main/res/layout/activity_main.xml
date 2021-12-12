@@ -30,4 +30,4 @@
             android:layout_height="match_parent"
             android:paddingTop="?attr/actionBarSize">
         </FrameLayout>
-    </androidx.co
+    </androidx.coordinatorlayout.widget.Coordinator
