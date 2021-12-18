@@ -30,4 +30,6 @@
             android:layout_height="match_parent"
             android:paddingTop="?attr/actionBarSize">
         </FrameLayout>
-    </androidx.coordinatorlayout.widget.Coordinator
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.unhappychoice.norimaki.presentati
