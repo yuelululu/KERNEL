@@ -33,4 +33,6 @@
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <com.unhappychoice.norimaki.presentation.view.NavigationView
-        android:id="@+i
+        android:id="@+id/navigationView"
+        android:layout_width="280dp"
+  
