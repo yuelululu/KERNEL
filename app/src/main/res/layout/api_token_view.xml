@@ -1,2 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.unhappychoice.norimaki.pre
+<com.unhappychoice.norimaki.presentation.view.APITokenView
+    xmlns:android
