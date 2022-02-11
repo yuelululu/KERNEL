@@ -5,4 +5,5 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingBottom="@dimen/vertical_margin"
-    android:paddin
+    android:paddingEnd="@dimen/horizontal_margin"
+    an
