@@ -6,4 +6,4 @@
     android:orientation="vertical"
     android:paddingBottom="@dimen/vertical_margin"
     android:paddingEnd="@dimen/horizontal_margin"
-    an
+    android:paddingLeft="@dimen/horizontal_margin"
