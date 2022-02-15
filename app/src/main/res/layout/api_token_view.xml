@@ -11,4 +11,6 @@
     android:paddingStart="@dimen/horizontal_margin"
     android:paddingTop="@dimen/vertical_margin">
 
-    <com.google.android.material.textfield.TextInputLayou
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+    
