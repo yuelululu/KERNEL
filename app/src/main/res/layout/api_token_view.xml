@@ -30,4 +30,5 @@
         android:text="@string/help_api_token"/>
 
     <Button
-        android:id="@+id
+        android:id="@+id/submitButton"
+        android:layout_wid
