@@ -27,4 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/vertical_margin"
         android:autoLink="web"
-        android:text="@string/help_a
+        android:text="@string/help_api_token"/>
+
+    <Button
+        android:id="@+id
