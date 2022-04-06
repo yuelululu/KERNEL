@@ -32,4 +32,5 @@
     <Button
         android:id="@+id/submitButton"
         android:layout_width="wrap_content"
-        android:layout_hei
+        android:layout_height="wrap_content"
+        android:layout_gravity="ce
