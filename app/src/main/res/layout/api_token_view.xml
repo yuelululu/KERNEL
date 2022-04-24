@@ -36,4 +36,4 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/vertical_margin"
         android:text="Apply"/>
-</com.unhappychoice.norimaki.presentation.view.APITokenView
+</com.unhappychoice.norimaki.presentation.view.APITokenView>
