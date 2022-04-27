@@ -85,3 +85,21 @@
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/vertical_margin"
+            android:layout_marginEnd="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:layout_marginTop="@dimen/vertical_margin"
+            android:gravity="end"
+            android:orientation="vertical"
+            android:paddingTop="3dp">
+
+            <TextView
+                android:id="@+id/createdAt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:maxLines="1"
+                android:textSize="11sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
