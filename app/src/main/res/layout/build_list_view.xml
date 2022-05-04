@@ -5,4 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <androidx.recyclerview.widget.Recyc
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/buildsView"
+  
