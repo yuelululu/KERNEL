@@ -7,4 +7,5 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/buildsView"
-  
+        android:layout_width="match_parent"
+        an
