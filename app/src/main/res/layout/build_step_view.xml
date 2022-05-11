@@ -25,3 +25,13 @@
                 android:layout_height="wrap_content"
                 android:lineSpacingMultiplier="1.2"
                 android:paddingBottom="@dimen/vertical_margin"
+                android:paddingEnd="@dimen/horizontal_margin"
+                android:paddingLeft="@dimen/horizontal_margin"
+                android:paddingRight="@dimen/horizontal_margin"
+                android:paddingStart="@dimen/horizontal_margin"
+                android:paddingTop="@dimen/vertical_margin"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textIsSelectable="true" />
+        </HorizontalScrollView>
+    </ScrollView>
+</com.unhappychoice.norimaki.presentation.view.BuildStepView>
