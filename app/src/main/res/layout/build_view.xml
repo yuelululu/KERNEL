@@ -8,4 +8,5 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/stepsView"
         android:layout_width="match_parent"
-        android:layout_heigh
+        android:layout_height="match_parent"/>
+</com.unhappychoice.n
