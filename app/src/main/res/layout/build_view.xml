@@ -6,4 +6,5 @@
     android:orientation="vertical">
 
     <androidx.recyclerview.widget.RecyclerView
-        android
+        android:id="@+id/stepsView"
+        android:layout_width="mat
