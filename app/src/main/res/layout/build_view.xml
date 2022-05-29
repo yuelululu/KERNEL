@@ -7,4 +7,5 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/stepsView"
-        android:layout_width="mat
+        android:layout_width="match_parent"
+        android:layout_heigh
