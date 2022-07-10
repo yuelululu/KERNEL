@@ -8,4 +8,5 @@
     <TextView
         android:id="@+id/projectNameView"
         android:layout_width="match_parent"
-        and
+        android:layout_height="36dp"
+        android:layout_ma
