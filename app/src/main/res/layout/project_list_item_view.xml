@@ -7,4 +7,5 @@
 
     <TextView
         android:id="@+id/projectNameView"
-        andro
+        android:layout_width="match_parent"
+        and
