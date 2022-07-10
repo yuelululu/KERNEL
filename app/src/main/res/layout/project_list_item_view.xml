@@ -9,4 +9,5 @@
         android:id="@+id/projectNameView"
         android:layout_width="match_parent"
         android:layout_height="36dp"
-        android:layout_ma
+        android:layout_marginTop="@dimen/vertical_margin_small"
+    
