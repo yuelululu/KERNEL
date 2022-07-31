@@ -1,2 +1,2 @@
 <resources>
-    <di
+    <dimen name="horizontal_margin">16dp</dimen
