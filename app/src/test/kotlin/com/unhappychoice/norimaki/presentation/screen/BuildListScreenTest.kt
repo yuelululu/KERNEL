@@ -6,4 +6,6 @@ import io.polymorphicpanda.kspec.KSpec
 import io.polymorphicpanda.kspec.describe
 import io.polymorphicpanda.kspec.it
 import io.polymorphicpanda.kspec.junit.JUnitKSpecRunner
-im
+import org.junit.runner.RunWith
+
+@RunWit
