@@ -8,4 +8,5 @@ import io.polymorphicpanda.kspec.it
 import io.polymorphicpanda.kspec.junit.JUnitKSpecRunner
 import org.junit.runner.RunWith
 
-@RunWit
+@RunWith(JUnitKSpecRunner::class)
+class BuildListScreenTest :
