@@ -9,4 +9,7 @@ import io.polymorphicpanda.kspec.junit.JUnitKSpecRunner
 import org.junit.runner.RunWith
 
 @RunWith(JUnitKSpecRunner::class)
-class BuildListScreenTest :
+class BuildListScreenTest : KSpec() {
+    lateinit var subject: BuildListScreen
+
+    
