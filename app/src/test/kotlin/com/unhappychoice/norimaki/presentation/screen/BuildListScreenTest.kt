@@ -12,4 +12,6 @@ import org.junit.runner.RunWith
 class BuildListScreenTest : KSpec() {
     lateinit var subject: BuildListScreen
 
-    
+    override fun spec() {
+        beforeEach {
+ 
