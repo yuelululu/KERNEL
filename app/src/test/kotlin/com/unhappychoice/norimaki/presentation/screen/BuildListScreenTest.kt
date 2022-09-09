@@ -14,4 +14,6 @@ class BuildListScreenTest : KSpec() {
 
     override fun spec() {
         beforeEach {
- 
+            subject = BuildListScreen("")
+        }
+
