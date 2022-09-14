@@ -18,4 +18,5 @@ class BuildListScreenTest : KSpec() {
         }
 
         describe("BuildListScreen") {
-      
+            describe(".getTitle()") {
+                it("s
