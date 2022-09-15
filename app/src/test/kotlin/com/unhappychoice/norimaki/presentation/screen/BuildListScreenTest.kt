@@ -20,4 +20,6 @@ class BuildListScreenTest : KSpec() {
         describe("BuildListScreen") {
             describe(".getTitle()") {
                 it("should return title") {
-                    expect(BuildListScreen("").getTitle()).to.equal("Re
+                    expect(BuildListScreen("").getTitle()).to.equal("Recent Builds")
+                }
+         
