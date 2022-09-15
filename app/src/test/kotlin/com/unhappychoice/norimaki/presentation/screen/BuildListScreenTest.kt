@@ -19,4 +19,5 @@ class BuildListScreenTest : KSpec() {
 
         describe("BuildListScreen") {
             describe(".getTitle()") {
-                it("s
+                it("should return title") {
+                    exp
