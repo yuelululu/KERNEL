@@ -23,4 +23,4 @@ class BuildListScreenTest : KSpec() {
                     expect(BuildListScreen("").getTitle()).to.equal("Recent Builds")
                 }
                 it("should return title") {
-      
+                    expect(BuildListScreen("unhappychoice/N
