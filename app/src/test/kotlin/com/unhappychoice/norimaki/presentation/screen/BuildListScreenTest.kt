@@ -27,4 +27,5 @@ class BuildListScreenTest : KSpec() {
                 }
             }
             describe(".getLayoutResource()") {
-                it("should return view 
+                it("should return view resource") {
+                    expect(
