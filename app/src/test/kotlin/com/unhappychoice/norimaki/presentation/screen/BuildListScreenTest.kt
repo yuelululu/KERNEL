@@ -25,4 +25,5 @@ class BuildListScreenTest : KSpec() {
                 it("should return title") {
                     expect(BuildListScreen("unhappychoice/Norimaki").getTitle()).to.equal("unhappychoice/Norimaki")
                 }
-            
+            }
+            describe(".getLayoutRe
