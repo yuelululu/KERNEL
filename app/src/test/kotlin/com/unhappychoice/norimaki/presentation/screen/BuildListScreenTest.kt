@@ -26,4 +26,5 @@ class BuildListScreenTest : KSpec() {
                     expect(BuildListScreen("unhappychoice/Norimaki").getTitle()).to.equal("unhappychoice/Norimaki")
                 }
             }
-            describe(".getLayoutRe
+            describe(".getLayoutResource()") {
+                it("should return view 
