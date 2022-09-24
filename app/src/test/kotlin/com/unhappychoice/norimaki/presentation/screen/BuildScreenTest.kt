@@ -1,3 +1,3 @@
 package com.unhappychoice.norimaki.presentation.screen
 
-impor
+import com.github.unhappychoice.circleci.response.
