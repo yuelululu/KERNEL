@@ -5,4 +5,5 @@ import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.mock
 import com.unhappychoice.norimaki.R
 import com.unhappychoice.norimaki.domain.model.revisionString
-import com.wi
+import com.winterbe.expekt.expect
+import io.polymor
