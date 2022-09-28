@@ -6,4 +6,5 @@ import com.nhaarman.mockitokotlin2.mock
 import com.unhappychoice.norimaki.R
 import com.unhappychoice.norimaki.domain.model.revisionString
 import com.winterbe.expekt.expect
-import io.polymor
+import io.polymorphicpanda.kspec.KSpec
+import io.polymorphicpanda.kspec
