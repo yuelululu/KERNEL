@@ -7,4 +7,5 @@ import com.unhappychoice.norimaki.R
 import com.unhappychoice.norimaki.domain.model.revisionString
 import com.winterbe.expekt.expect
 import io.polymorphicpanda.kspec.KSpec
-import io.polymorphicpanda.kspec
+import io.polymorphicpanda.kspec.describe
+import io.polymorphicpanda.kspec.it
