@@ -9,4 +9,5 @@ import com.winterbe.expekt.expect
 import io.polymorphicpanda.kspec.KSpec
 import io.polymorphicpanda.kspec.describe
 import io.polymorphicpanda.kspec.it
-import io.polymorphicpanda.kspec.
+import io.polymorphicpanda.kspec.junit.JUnitKSpecRunner
+import org.j
