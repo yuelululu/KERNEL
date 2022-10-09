@@ -15,4 +15,6 @@ import org.junit.runner.RunWith
 @RunWith(JUnitKSpecRunner::class)
 class BuildScreenTest : KSpec() {
     lateinit var subject: BuildScreen
- 
+    lateinit var build: Build
+
+    override fun spec()
