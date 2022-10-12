@@ -17,4 +17,6 @@ class BuildScreenTest : KSpec() {
     lateinit var subject: BuildScreen
     lateinit var build: Build
 
-    override fun spec()
+    override fun spec() {
+        beforeEach {
+            build =
