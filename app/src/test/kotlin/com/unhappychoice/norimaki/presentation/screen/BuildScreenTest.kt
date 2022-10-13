@@ -21,3 +21,6 @@ class BuildScreenTest : KSpec() {
         beforeEach {
             build = mock { on { revisionString() } doReturn("revisionString") }
             subject = BuildScreen(build)
+        }
+
+        describe("BuildScreen") {
