@@ -19,4 +19,5 @@ class BuildScreenTest : KSpec() {
 
     override fun spec() {
         beforeEach {
-            build = mock { on { revisionString() } doReturn("revisionString"
+            build = mock { on { revisionString() } doReturn("revisionString") }
+            subject = BuildScreen(build)
