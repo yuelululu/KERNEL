@@ -24,3 +24,5 @@ class BuildScreenTest : KSpec() {
         }
 
         describe("BuildScreen") {
+            describe(".getTitle()") {
+           
