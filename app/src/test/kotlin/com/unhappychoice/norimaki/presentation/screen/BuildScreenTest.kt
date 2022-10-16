@@ -26,4 +26,5 @@ class BuildScreenTest : KSpec() {
         describe("BuildScreen") {
             describe(".getTitle()") {
                 it("should return title") {
-                    expect(subject.getT
+                    expect(subject.getTitle()).to.equal(build.revisionString())
+  
