@@ -29,4 +29,5 @@ class BuildScreenTest : KSpec() {
                     expect(subject.getTitle()).to.equal(build.revisionString())
                 }
             }
-         
+            describe(".getLayoutResource()") {
+       
