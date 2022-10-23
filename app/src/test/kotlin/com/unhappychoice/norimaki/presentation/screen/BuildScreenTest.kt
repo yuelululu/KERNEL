@@ -31,4 +31,7 @@ class BuildScreenTest : KSpec() {
             }
             describe(".getLayoutResource()") {
                 it("should return view resource") {
-                    expect(subject.getLayoutResource()).to.equal(R.layout.build
+                    expect(subject.getLayoutResource()).to.equal(R.layout.build_view)
+                }
+            }
+        }
