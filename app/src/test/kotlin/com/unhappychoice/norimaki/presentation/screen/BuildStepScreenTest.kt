@@ -1,4 +1,5 @@
 package com.unhappychoice.norimaki.presentation.screen
 
 import com.github.unhappychoice.circleci.response.Build
-import com.github.unhappychoice.circleci.re
+import com.github.unhappychoice.circleci.response.BuildStep
+import com.nhaarman.mockitokotlin2.doRetu
