@@ -6,4 +6,5 @@ import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.mock
 import com.unhappychoice.norimaki.R
 import com.winterbe.expekt.expect
-import io.polymorphicpanda.k
+import io.polymorphicpanda.kspec.KSpec
+import io.polymorphicp
