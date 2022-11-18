@@ -15,4 +15,5 @@ import org.junit.runner.RunWith
 @RunWith(JUnitKSpecRunner::class)
 class BuildStepScreenTest : KSpec() {
     lateinit var subject: BuildStepScreen
-    la
+    lateinit var build: Build
+    lateinit var
