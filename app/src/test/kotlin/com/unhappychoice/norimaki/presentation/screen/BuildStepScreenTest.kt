@@ -12,4 +12,6 @@ import io.polymorphicpanda.kspec.it
 import io.polymorphicpanda.kspec.junit.JUnitKSpecRunner
 import org.junit.runner.RunWith
 
-@RunWith(JUnitKSpecRunner::class
+@RunWith(JUnitKSpecRunner::class)
+class BuildStepScreenTest : KSpec() {
+    l
