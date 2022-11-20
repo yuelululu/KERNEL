@@ -16,4 +16,5 @@ import org.junit.runner.RunWith
 class BuildStepScreenTest : KSpec() {
     lateinit var subject: BuildStepScreen
     lateinit var build: Build
-    lateinit var
+    lateinit var buildStep: BuildStep
+    val stepI
