@@ -17,4 +17,6 @@ class BuildStepScreenTest : KSpec() {
     lateinit var subject: BuildStepScreen
     lateinit var build: Build
     lateinit var buildStep: BuildStep
-    val stepI
+    val stepIndex = 0
+
+    override fun spec() {
