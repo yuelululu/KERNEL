@@ -22,4 +22,4 @@ class BuildStepScreenTest : KSpec() {
     override fun spec() {
         beforeEach {
             build = mock { }
-  
+            buildStep = mock { on { name } doReturn(
