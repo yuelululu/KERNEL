@@ -20,3 +20,6 @@ class BuildStepScreenTest : KSpec() {
     val stepIndex = 0
 
     override fun spec() {
+        beforeEach {
+            build = mock { }
+  
