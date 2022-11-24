@@ -26,4 +26,5 @@ class BuildStepScreenTest : KSpec() {
             subject = BuildStepScreen(build, buildStep)
         }
 
-        describe("Build
+        describe("BuildStepScreen") {
+            describe(".get
