@@ -27,4 +27,5 @@ class BuildStepScreenTest : KSpec() {
         }
 
         describe("BuildStepScreen") {
-            describe(".get
+            describe(".getTitle()") {
+                it("should 
