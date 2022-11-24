@@ -23,4 +23,7 @@ class BuildStepScreenTest : KSpec() {
         beforeEach {
             build = mock { }
             buildStep = mock { on { name } doReturn("build name") }
-            subject = BuildStep
+            subject = BuildStepScreen(build, buildStep)
+        }
+
+        describe("Build
