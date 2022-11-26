@@ -30,3 +30,5 @@ class BuildStepScreenTest : KSpec() {
             describe(".getTitle()") {
                 it("should return title") {
                     expect(subject.getTitle()).to.equal(buildStep.name)
+                }
+            }
