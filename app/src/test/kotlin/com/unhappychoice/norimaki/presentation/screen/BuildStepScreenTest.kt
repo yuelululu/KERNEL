@@ -32,4 +32,5 @@ class BuildStepScreenTest : KSpec() {
                     expect(subject.getTitle()).to.equal(buildStep.name)
                 }
             }
-            describe(".getLayoutResource()"
+            describe(".getLayoutResource()") {
+                it("should ret
