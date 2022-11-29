@@ -33,4 +33,5 @@ class BuildStepScreenTest : KSpec() {
                 }
             }
             describe(".getLayoutResource()") {
-                it("should ret
+                it("should return view resource") {
+                    
