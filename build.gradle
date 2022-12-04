@@ -6,4 +6,5 @@ buildscript {
         mavenCentral()
         google()
     }
-    depende
+    dependencies {
+        classpath 'com.android.tools.bu
