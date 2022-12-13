@@ -7,4 +7,5 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.bu
+        classpath 'com.android.tools.build:gradle:7.4.1'
+        classpath "org.j
