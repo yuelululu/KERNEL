@@ -21,4 +21,4 @@ allprojects {
         google()
         jcenter()
         maven { url("https://jitpack.io") }
-        maven { u
+        maven { url('https://oss.sonatype.org/c
