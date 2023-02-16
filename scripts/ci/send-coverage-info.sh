@@ -1,4 +1,4 @@
 #! /bin/bash
 set -eu
 
-bash <(
+bash <(curl -s https://codecov.io/bash) -t 401f65aa
